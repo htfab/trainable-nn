@@ -142,7 +142,7 @@ jobs:
 
       - name: Harden using Openlane
         run: |
-          make user_proj_example
+          make trainable_nn
           make user_project_wrapper
 
       - name: Run DV RTL tests
@@ -204,7 +204,7 @@ jobs:
 
       - name: Harden using Openlane
         run: |
-          make user_proj_example
+          make trainable_nn
           make user_project_wrapper
 
       - name: Run DV RTL tests
