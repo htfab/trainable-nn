@@ -128,10 +128,6 @@
 .subckt sky130_fd_sc_hd__and2_1 A B VGND VNB VPB VPWR X
 .ends
 
-* Black-box entry subcircuit for sky130_fd_sc_hd__conb_1 abstract view
-.subckt sky130_fd_sc_hd__conb_1 VGND VNB VPB VPWR HI LO
-.ends
-
 * Black-box entry subcircuit for sky130_fd_sc_hd__nand2_1 abstract view
 .subckt sky130_fd_sc_hd__nand2_1 A B VGND VNB VPB VPWR Y
 .ends
@@ -162,6 +158,10 @@
 
 * Black-box entry subcircuit for sky130_fd_sc_hd__and3b_2 abstract view
 .subckt sky130_fd_sc_hd__and3b_2 A_N B C VGND VNB VPB VPWR X
+.ends
+
+* Black-box entry subcircuit for sky130_fd_sc_hd__conb_1 abstract view
+.subckt sky130_fd_sc_hd__conb_1 VGND VNB VPB VPWR HI LO
 .ends
 
 * Black-box entry subcircuit for sky130_fd_sc_hd__o211a_1 abstract view
@@ -256,102 +256,101 @@
 .subckt sky130_fd_sc_hd__nor2_2 A B VGND VNB VPB VPWR Y
 .ends
 
-.subckt trainable_nn io_in[0] io_in[10] io_in[11] io_in[12] io_in[13] io_in[14]
-+ io_in[15] io_in[16] io_in[17] io_in[18] io_in[19] io_in[1] io_in[20] io_in[21] io_in[22]
-+ io_in[23] io_in[24] io_in[25] io_in[26] io_in[27] io_in[28] io_in[29] io_in[2] io_in[30]
-+ io_in[31] io_in[32] io_in[33] io_in[34] io_in[35] io_in[36] io_in[37] io_in[3] io_in[4]
-+ io_in[5] io_in[6] io_in[7] io_in[8] io_in[9] io_oeb[0] io_oeb[10] io_oeb[11] io_oeb[12]
-+ io_oeb[13] io_oeb[14] io_oeb[15] io_oeb[16] io_oeb[17] io_oeb[18] io_oeb[19] io_oeb[1]
-+ io_oeb[20] io_oeb[21] io_oeb[22] io_oeb[23] io_oeb[24] io_oeb[25] io_oeb[26] io_oeb[27]
-+ io_oeb[28] io_oeb[29] io_oeb[2] io_oeb[30] io_oeb[31] io_oeb[32] io_oeb[33] io_oeb[34]
-+ io_oeb[35] io_oeb[36] io_oeb[37] io_oeb[3] io_oeb[4] io_oeb[5] io_oeb[6] io_oeb[7]
-+ io_oeb[8] io_oeb[9] io_out[0] io_out[10] io_out[11] io_out[12] io_out[13] io_out[14]
-+ io_out[15] io_out[16] io_out[17] io_out[18] io_out[19] io_out[1] io_out[20] io_out[21]
-+ io_out[22] io_out[23] io_out[24] io_out[25] io_out[26] io_out[27] io_out[28] io_out[29]
-+ io_out[2] io_out[30] io_out[31] io_out[32] io_out[33] io_out[34] io_out[35] io_out[36]
-+ io_out[37] io_out[3] io_out[4] io_out[5] io_out[6] io_out[7] io_out[8] io_out[9]
-+ irq[0] irq[1] irq[2] la_data_in[0] la_data_in[100] la_data_in[101] la_data_in[102]
-+ la_data_in[103] la_data_in[104] la_data_in[105] la_data_in[106] la_data_in[107]
-+ la_data_in[108] la_data_in[109] la_data_in[10] la_data_in[110] la_data_in[111] la_data_in[112]
-+ la_data_in[113] la_data_in[114] la_data_in[115] la_data_in[116] la_data_in[117]
-+ la_data_in[118] la_data_in[119] la_data_in[11] la_data_in[120] la_data_in[121] la_data_in[122]
-+ la_data_in[123] la_data_in[124] la_data_in[125] la_data_in[126] la_data_in[127]
-+ la_data_in[12] la_data_in[13] la_data_in[14] la_data_in[15] la_data_in[16] la_data_in[17]
-+ la_data_in[18] la_data_in[19] la_data_in[1] la_data_in[20] la_data_in[21] la_data_in[22]
-+ la_data_in[23] la_data_in[24] la_data_in[25] la_data_in[26] la_data_in[27] la_data_in[28]
-+ la_data_in[29] la_data_in[2] la_data_in[30] la_data_in[31] la_data_in[32] la_data_in[33]
-+ la_data_in[34] la_data_in[35] la_data_in[36] la_data_in[37] la_data_in[38] la_data_in[39]
-+ la_data_in[3] la_data_in[40] la_data_in[41] la_data_in[42] la_data_in[43] la_data_in[44]
-+ la_data_in[45] la_data_in[46] la_data_in[47] la_data_in[48] la_data_in[49] la_data_in[4]
-+ la_data_in[50] la_data_in[51] la_data_in[52] la_data_in[53] la_data_in[54] la_data_in[55]
-+ la_data_in[56] la_data_in[57] la_data_in[58] la_data_in[59] la_data_in[5] la_data_in[60]
-+ la_data_in[61] la_data_in[62] la_data_in[63] la_data_in[64] la_data_in[65] la_data_in[66]
-+ la_data_in[67] la_data_in[68] la_data_in[69] la_data_in[6] la_data_in[70] la_data_in[71]
-+ la_data_in[72] la_data_in[73] la_data_in[74] la_data_in[75] la_data_in[76] la_data_in[77]
-+ la_data_in[78] la_data_in[79] la_data_in[7] la_data_in[80] la_data_in[81] la_data_in[82]
-+ la_data_in[83] la_data_in[84] la_data_in[85] la_data_in[86] la_data_in[87] la_data_in[88]
-+ la_data_in[89] la_data_in[8] la_data_in[90] la_data_in[91] la_data_in[92] la_data_in[93]
-+ la_data_in[94] la_data_in[95] la_data_in[96] la_data_in[97] la_data_in[98] la_data_in[99]
-+ la_data_in[9] la_data_out[0] la_data_out[100] la_data_out[101] la_data_out[102]
-+ la_data_out[103] la_data_out[104] la_data_out[105] la_data_out[106] la_data_out[107]
-+ la_data_out[108] la_data_out[109] la_data_out[10] la_data_out[110] la_data_out[111]
-+ la_data_out[112] la_data_out[113] la_data_out[114] la_data_out[115] la_data_out[116]
-+ la_data_out[117] la_data_out[118] la_data_out[119] la_data_out[11] la_data_out[120]
-+ la_data_out[121] la_data_out[122] la_data_out[123] la_data_out[124] la_data_out[125]
-+ la_data_out[126] la_data_out[127] la_data_out[12] la_data_out[13] la_data_out[14]
-+ la_data_out[15] la_data_out[16] la_data_out[17] la_data_out[18] la_data_out[19]
-+ la_data_out[1] la_data_out[20] la_data_out[21] la_data_out[22] la_data_out[23] la_data_out[24]
-+ la_data_out[25] la_data_out[26] la_data_out[27] la_data_out[28] la_data_out[29]
-+ la_data_out[2] la_data_out[30] la_data_out[31] la_data_out[32] la_data_out[33] la_data_out[34]
-+ la_data_out[35] la_data_out[36] la_data_out[37] la_data_out[38] la_data_out[39]
-+ la_data_out[3] la_data_out[40] la_data_out[41] la_data_out[42] la_data_out[43] la_data_out[44]
-+ la_data_out[45] la_data_out[46] la_data_out[47] la_data_out[48] la_data_out[49]
-+ la_data_out[4] la_data_out[50] la_data_out[51] la_data_out[52] la_data_out[53] la_data_out[54]
-+ la_data_out[55] la_data_out[56] la_data_out[57] la_data_out[58] la_data_out[59]
-+ la_data_out[5] la_data_out[60] la_data_out[61] la_data_out[62] la_data_out[63] la_data_out[64]
-+ la_data_out[65] la_data_out[66] la_data_out[67] la_data_out[68] la_data_out[69]
-+ la_data_out[6] la_data_out[70] la_data_out[71] la_data_out[72] la_data_out[73] la_data_out[74]
-+ la_data_out[75] la_data_out[76] la_data_out[77] la_data_out[78] la_data_out[79]
-+ la_data_out[7] la_data_out[80] la_data_out[81] la_data_out[82] la_data_out[83] la_data_out[84]
-+ la_data_out[85] la_data_out[86] la_data_out[87] la_data_out[88] la_data_out[89]
-+ la_data_out[8] la_data_out[90] la_data_out[91] la_data_out[92] la_data_out[93] la_data_out[94]
-+ la_data_out[95] la_data_out[96] la_data_out[97] la_data_out[98] la_data_out[99]
-+ la_data_out[9] la_oenb[0] la_oenb[100] la_oenb[101] la_oenb[102] la_oenb[103] la_oenb[104]
-+ la_oenb[105] la_oenb[106] la_oenb[107] la_oenb[108] la_oenb[109] la_oenb[10] la_oenb[110]
-+ la_oenb[111] la_oenb[112] la_oenb[113] la_oenb[114] la_oenb[115] la_oenb[116] la_oenb[117]
-+ la_oenb[118] la_oenb[119] la_oenb[11] la_oenb[120] la_oenb[121] la_oenb[122] la_oenb[123]
-+ la_oenb[124] la_oenb[125] la_oenb[126] la_oenb[127] la_oenb[12] la_oenb[13] la_oenb[14]
-+ la_oenb[15] la_oenb[16] la_oenb[17] la_oenb[18] la_oenb[19] la_oenb[1] la_oenb[20]
-+ la_oenb[21] la_oenb[22] la_oenb[23] la_oenb[24] la_oenb[25] la_oenb[26] la_oenb[27]
-+ la_oenb[28] la_oenb[29] la_oenb[2] la_oenb[30] la_oenb[31] la_oenb[32] la_oenb[33]
-+ la_oenb[34] la_oenb[35] la_oenb[36] la_oenb[37] la_oenb[38] la_oenb[39] la_oenb[3]
-+ la_oenb[40] la_oenb[41] la_oenb[42] la_oenb[43] la_oenb[44] la_oenb[45] la_oenb[46]
-+ la_oenb[47] la_oenb[48] la_oenb[49] la_oenb[4] la_oenb[50] la_oenb[51] la_oenb[52]
-+ la_oenb[53] la_oenb[54] la_oenb[55] la_oenb[56] la_oenb[57] la_oenb[58] la_oenb[59]
-+ la_oenb[5] la_oenb[60] la_oenb[61] la_oenb[62] la_oenb[63] la_oenb[64] la_oenb[65]
-+ la_oenb[66] la_oenb[67] la_oenb[68] la_oenb[69] la_oenb[6] la_oenb[70] la_oenb[71]
-+ la_oenb[72] la_oenb[73] la_oenb[74] la_oenb[75] la_oenb[76] la_oenb[77] la_oenb[78]
-+ la_oenb[79] la_oenb[7] la_oenb[80] la_oenb[81] la_oenb[82] la_oenb[83] la_oenb[84]
-+ la_oenb[85] la_oenb[86] la_oenb[87] la_oenb[88] la_oenb[89] la_oenb[8] la_oenb[90]
-+ la_oenb[91] la_oenb[92] la_oenb[93] la_oenb[94] la_oenb[95] la_oenb[96] la_oenb[97]
-+ la_oenb[98] la_oenb[99] la_oenb[9] vccd1 vssd1 wb_clk_i wb_rst_i wbs_ack_o wbs_adr_i[0]
-+ wbs_adr_i[10] wbs_adr_i[11] wbs_adr_i[12] wbs_adr_i[13] wbs_adr_i[14] wbs_adr_i[15]
-+ wbs_adr_i[16] wbs_adr_i[17] wbs_adr_i[18] wbs_adr_i[19] wbs_adr_i[1] wbs_adr_i[20]
-+ wbs_adr_i[21] wbs_adr_i[22] wbs_adr_i[23] wbs_adr_i[24] wbs_adr_i[25] wbs_adr_i[26]
-+ wbs_adr_i[27] wbs_adr_i[28] wbs_adr_i[29] wbs_adr_i[2] wbs_adr_i[30] wbs_adr_i[31]
-+ wbs_adr_i[3] wbs_adr_i[4] wbs_adr_i[5] wbs_adr_i[6] wbs_adr_i[7] wbs_adr_i[8] wbs_adr_i[9]
-+ wbs_cyc_i wbs_dat_i[0] wbs_dat_i[10] wbs_dat_i[11] wbs_dat_i[12] wbs_dat_i[13] wbs_dat_i[14]
-+ wbs_dat_i[15] wbs_dat_i[16] wbs_dat_i[17] wbs_dat_i[18] wbs_dat_i[19] wbs_dat_i[1]
-+ wbs_dat_i[20] wbs_dat_i[21] wbs_dat_i[22] wbs_dat_i[23] wbs_dat_i[24] wbs_dat_i[25]
-+ wbs_dat_i[26] wbs_dat_i[27] wbs_dat_i[28] wbs_dat_i[29] wbs_dat_i[2] wbs_dat_i[30]
-+ wbs_dat_i[31] wbs_dat_i[3] wbs_dat_i[4] wbs_dat_i[5] wbs_dat_i[6] wbs_dat_i[7] wbs_dat_i[8]
-+ wbs_dat_i[9] wbs_dat_o[0] wbs_dat_o[10] wbs_dat_o[11] wbs_dat_o[12] wbs_dat_o[13]
-+ wbs_dat_o[14] wbs_dat_o[15] wbs_dat_o[16] wbs_dat_o[17] wbs_dat_o[18] wbs_dat_o[19]
-+ wbs_dat_o[1] wbs_dat_o[20] wbs_dat_o[21] wbs_dat_o[22] wbs_dat_o[23] wbs_dat_o[24]
-+ wbs_dat_o[25] wbs_dat_o[26] wbs_dat_o[27] wbs_dat_o[28] wbs_dat_o[29] wbs_dat_o[2]
-+ wbs_dat_o[30] wbs_dat_o[31] wbs_dat_o[3] wbs_dat_o[4] wbs_dat_o[5] wbs_dat_o[6]
-+ wbs_dat_o[7] wbs_dat_o[8] wbs_dat_o[9] wbs_sel_i[0] wbs_sel_i[1] wbs_sel_i[2] wbs_sel_i[3]
-+ wbs_stb_i wbs_we_i
+.subckt trainable_nn io_in[0] io_in[10] io_in[11] io_in[12] io_in[13] io_in[14] io_in[15]
++ io_in[16] io_in[17] io_in[18] io_in[19] io_in[1] io_in[20] io_in[21] io_in[22] io_in[23]
++ io_in[24] io_in[25] io_in[26] io_in[27] io_in[28] io_in[29] io_in[2] io_in[30] io_in[31]
++ io_in[32] io_in[33] io_in[34] io_in[35] io_in[36] io_in[37] io_in[3] io_in[4] io_in[5]
++ io_in[6] io_in[7] io_in[8] io_in[9] io_oeb[0] io_oeb[10] io_oeb[11] io_oeb[12] io_oeb[13]
++ io_oeb[14] io_oeb[15] io_oeb[16] io_oeb[17] io_oeb[18] io_oeb[19] io_oeb[1] io_oeb[20]
++ io_oeb[21] io_oeb[22] io_oeb[23] io_oeb[24] io_oeb[25] io_oeb[26] io_oeb[27] io_oeb[28]
++ io_oeb[29] io_oeb[2] io_oeb[30] io_oeb[31] io_oeb[32] io_oeb[33] io_oeb[34] io_oeb[35]
++ io_oeb[36] io_oeb[37] io_oeb[3] io_oeb[4] io_oeb[5] io_oeb[6] io_oeb[7] io_oeb[8]
++ io_oeb[9] io_out[0] io_out[10] io_out[11] io_out[12] io_out[13] io_out[14] io_out[15]
++ io_out[16] io_out[17] io_out[18] io_out[19] io_out[1] io_out[20] io_out[21] io_out[22]
++ io_out[23] io_out[24] io_out[25] io_out[26] io_out[27] io_out[28] io_out[29] io_out[2]
++ io_out[30] io_out[31] io_out[32] io_out[33] io_out[34] io_out[35] io_out[36] io_out[37]
++ io_out[3] io_out[4] io_out[5] io_out[6] io_out[7] io_out[8] io_out[9] irq[0] irq[1]
++ irq[2] la_data_in[0] la_data_in[100] la_data_in[101] la_data_in[102] la_data_in[103]
++ la_data_in[104] la_data_in[105] la_data_in[106] la_data_in[107] la_data_in[108]
++ la_data_in[109] la_data_in[10] la_data_in[110] la_data_in[111] la_data_in[112] la_data_in[113]
++ la_data_in[114] la_data_in[115] la_data_in[116] la_data_in[117] la_data_in[118]
++ la_data_in[119] la_data_in[11] la_data_in[120] la_data_in[121] la_data_in[122] la_data_in[123]
++ la_data_in[124] la_data_in[125] la_data_in[126] la_data_in[127] la_data_in[12] la_data_in[13]
++ la_data_in[14] la_data_in[15] la_data_in[16] la_data_in[17] la_data_in[18] la_data_in[19]
++ la_data_in[1] la_data_in[20] la_data_in[21] la_data_in[22] la_data_in[23] la_data_in[24]
++ la_data_in[25] la_data_in[26] la_data_in[27] la_data_in[28] la_data_in[29] la_data_in[2]
++ la_data_in[30] la_data_in[31] la_data_in[32] la_data_in[33] la_data_in[34] la_data_in[35]
++ la_data_in[36] la_data_in[37] la_data_in[38] la_data_in[39] la_data_in[3] la_data_in[40]
++ la_data_in[41] la_data_in[42] la_data_in[43] la_data_in[44] la_data_in[45] la_data_in[46]
++ la_data_in[47] la_data_in[48] la_data_in[49] la_data_in[4] la_data_in[50] la_data_in[51]
++ la_data_in[52] la_data_in[53] la_data_in[54] la_data_in[55] la_data_in[56] la_data_in[57]
++ la_data_in[58] la_data_in[59] la_data_in[5] la_data_in[60] la_data_in[61] la_data_in[62]
++ la_data_in[63] la_data_in[64] la_data_in[65] la_data_in[66] la_data_in[67] la_data_in[68]
++ la_data_in[69] la_data_in[6] la_data_in[70] la_data_in[71] la_data_in[72] la_data_in[73]
++ la_data_in[74] la_data_in[75] la_data_in[76] la_data_in[77] la_data_in[78] la_data_in[79]
++ la_data_in[7] la_data_in[80] la_data_in[81] la_data_in[82] la_data_in[83] la_data_in[84]
++ la_data_in[85] la_data_in[86] la_data_in[87] la_data_in[88] la_data_in[89] la_data_in[8]
++ la_data_in[90] la_data_in[91] la_data_in[92] la_data_in[93] la_data_in[94] la_data_in[95]
++ la_data_in[96] la_data_in[97] la_data_in[98] la_data_in[99] la_data_in[9] la_data_out[0]
++ la_data_out[100] la_data_out[101] la_data_out[102] la_data_out[103] la_data_out[104]
++ la_data_out[105] la_data_out[106] la_data_out[107] la_data_out[108] la_data_out[109]
++ la_data_out[10] la_data_out[110] la_data_out[111] la_data_out[112] la_data_out[113]
++ la_data_out[114] la_data_out[115] la_data_out[116] la_data_out[117] la_data_out[118]
++ la_data_out[119] la_data_out[11] la_data_out[120] la_data_out[121] la_data_out[122]
++ la_data_out[123] la_data_out[124] la_data_out[125] la_data_out[126] la_data_out[127]
++ la_data_out[12] la_data_out[13] la_data_out[14] la_data_out[15] la_data_out[16]
++ la_data_out[17] la_data_out[18] la_data_out[19] la_data_out[1] la_data_out[20] la_data_out[21]
++ la_data_out[22] la_data_out[23] la_data_out[24] la_data_out[25] la_data_out[26]
++ la_data_out[27] la_data_out[28] la_data_out[29] la_data_out[2] la_data_out[30] la_data_out[31]
++ la_data_out[32] la_data_out[33] la_data_out[34] la_data_out[35] la_data_out[36]
++ la_data_out[37] la_data_out[38] la_data_out[39] la_data_out[3] la_data_out[40] la_data_out[41]
++ la_data_out[42] la_data_out[43] la_data_out[44] la_data_out[45] la_data_out[46]
++ la_data_out[47] la_data_out[48] la_data_out[49] la_data_out[4] la_data_out[50] la_data_out[51]
++ la_data_out[52] la_data_out[53] la_data_out[54] la_data_out[55] la_data_out[56]
++ la_data_out[57] la_data_out[58] la_data_out[59] la_data_out[5] la_data_out[60] la_data_out[61]
++ la_data_out[62] la_data_out[63] la_data_out[64] la_data_out[65] la_data_out[66]
++ la_data_out[67] la_data_out[68] la_data_out[69] la_data_out[6] la_data_out[70] la_data_out[71]
++ la_data_out[72] la_data_out[73] la_data_out[74] la_data_out[75] la_data_out[76]
++ la_data_out[77] la_data_out[78] la_data_out[79] la_data_out[7] la_data_out[80] la_data_out[81]
++ la_data_out[82] la_data_out[83] la_data_out[84] la_data_out[85] la_data_out[86]
++ la_data_out[87] la_data_out[88] la_data_out[89] la_data_out[8] la_data_out[90] la_data_out[91]
++ la_data_out[92] la_data_out[93] la_data_out[94] la_data_out[95] la_data_out[96]
++ la_data_out[97] la_data_out[98] la_data_out[99] la_data_out[9] la_oenb[0] la_oenb[100]
++ la_oenb[101] la_oenb[102] la_oenb[103] la_oenb[104] la_oenb[105] la_oenb[106] la_oenb[107]
++ la_oenb[108] la_oenb[109] la_oenb[10] la_oenb[110] la_oenb[111] la_oenb[112] la_oenb[113]
++ la_oenb[114] la_oenb[115] la_oenb[116] la_oenb[117] la_oenb[118] la_oenb[119] la_oenb[11]
++ la_oenb[120] la_oenb[121] la_oenb[122] la_oenb[123] la_oenb[124] la_oenb[125] la_oenb[126]
++ la_oenb[127] la_oenb[12] la_oenb[13] la_oenb[14] la_oenb[15] la_oenb[16] la_oenb[17]
++ la_oenb[18] la_oenb[19] la_oenb[1] la_oenb[20] la_oenb[21] la_oenb[22] la_oenb[23]
++ la_oenb[24] la_oenb[25] la_oenb[26] la_oenb[27] la_oenb[28] la_oenb[29] la_oenb[2]
++ la_oenb[30] la_oenb[31] la_oenb[32] la_oenb[33] la_oenb[34] la_oenb[35] la_oenb[36]
++ la_oenb[37] la_oenb[38] la_oenb[39] la_oenb[3] la_oenb[40] la_oenb[41] la_oenb[42]
++ la_oenb[43] la_oenb[44] la_oenb[45] la_oenb[46] la_oenb[47] la_oenb[48] la_oenb[49]
++ la_oenb[4] la_oenb[50] la_oenb[51] la_oenb[52] la_oenb[53] la_oenb[54] la_oenb[55]
++ la_oenb[56] la_oenb[57] la_oenb[58] la_oenb[59] la_oenb[5] la_oenb[60] la_oenb[61]
++ la_oenb[62] la_oenb[63] la_oenb[64] la_oenb[65] la_oenb[66] la_oenb[67] la_oenb[68]
++ la_oenb[69] la_oenb[6] la_oenb[70] la_oenb[71] la_oenb[72] la_oenb[73] la_oenb[74]
++ la_oenb[75] la_oenb[76] la_oenb[77] la_oenb[78] la_oenb[79] la_oenb[7] la_oenb[80]
++ la_oenb[81] la_oenb[82] la_oenb[83] la_oenb[84] la_oenb[85] la_oenb[86] la_oenb[87]
++ la_oenb[88] la_oenb[89] la_oenb[8] la_oenb[90] la_oenb[91] la_oenb[92] la_oenb[93]
++ la_oenb[94] la_oenb[95] la_oenb[96] la_oenb[97] la_oenb[98] la_oenb[99] la_oenb[9]
++ vccd1 vssd1 wb_clk_i wb_rst_i wbs_ack_o wbs_adr_i[0] wbs_adr_i[10] wbs_adr_i[11]
++ wbs_adr_i[12] wbs_adr_i[13] wbs_adr_i[14] wbs_adr_i[15] wbs_adr_i[16] wbs_adr_i[17]
++ wbs_adr_i[18] wbs_adr_i[19] wbs_adr_i[1] wbs_adr_i[20] wbs_adr_i[21] wbs_adr_i[22]
++ wbs_adr_i[23] wbs_adr_i[24] wbs_adr_i[25] wbs_adr_i[26] wbs_adr_i[27] wbs_adr_i[28]
++ wbs_adr_i[29] wbs_adr_i[2] wbs_adr_i[30] wbs_adr_i[31] wbs_adr_i[3] wbs_adr_i[4]
++ wbs_adr_i[5] wbs_adr_i[6] wbs_adr_i[7] wbs_adr_i[8] wbs_adr_i[9] wbs_cyc_i wbs_dat_i[0]
++ wbs_dat_i[10] wbs_dat_i[11] wbs_dat_i[12] wbs_dat_i[13] wbs_dat_i[14] wbs_dat_i[15]
++ wbs_dat_i[16] wbs_dat_i[17] wbs_dat_i[18] wbs_dat_i[19] wbs_dat_i[1] wbs_dat_i[20]
++ wbs_dat_i[21] wbs_dat_i[22] wbs_dat_i[23] wbs_dat_i[24] wbs_dat_i[25] wbs_dat_i[26]
++ wbs_dat_i[27] wbs_dat_i[28] wbs_dat_i[29] wbs_dat_i[2] wbs_dat_i[30] wbs_dat_i[31]
++ wbs_dat_i[3] wbs_dat_i[4] wbs_dat_i[5] wbs_dat_i[6] wbs_dat_i[7] wbs_dat_i[8] wbs_dat_i[9]
++ wbs_dat_o[0] wbs_dat_o[10] wbs_dat_o[11] wbs_dat_o[12] wbs_dat_o[13] wbs_dat_o[14]
++ wbs_dat_o[15] wbs_dat_o[16] wbs_dat_o[17] wbs_dat_o[18] wbs_dat_o[19] wbs_dat_o[1]
++ wbs_dat_o[20] wbs_dat_o[21] wbs_dat_o[22] wbs_dat_o[23] wbs_dat_o[24] wbs_dat_o[25]
++ wbs_dat_o[26] wbs_dat_o[27] wbs_dat_o[28] wbs_dat_o[29] wbs_dat_o[2] wbs_dat_o[30]
++ wbs_dat_o[31] wbs_dat_o[3] wbs_dat_o[4] wbs_dat_o[5] wbs_dat_o[6] wbs_dat_o[7] wbs_dat_o[8]
++ wbs_dat_o[9] wbs_sel_i[0] wbs_sel_i[1] wbs_sel_i[2] wbs_sel_i[3] wbs_stb_i wbs_we_i
 XFILLER_79_391 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
 XFILLER_171_1393 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
 XFILLER_67_553 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
@@ -5899,8 +5898,6 @@ XFILLER_163_529 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_116_401 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_156_581 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
 XFILLER_141_1393 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
-Xtrainable_nn_370 vssd1 vssd1 vccd1 vccd1 trainable_nn_370/HI la_data_out[122]
-+ sky130_fd_sc_hd__conb_1
 XFILLER_116_445 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_132_905 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_172_1309 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
@@ -7352,10 +7349,6 @@ XFILLER_191_839 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
 XFILLER_129_785 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_128_251 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
 XFILLER_116_413 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
-Xtrainable_nn_360 vssd1 vssd1 vccd1 vccd1 trainable_nn_360/HI la_data_out[112]
-+ sky130_fd_sc_hd__conb_1
-Xtrainable_nn_371 vssd1 vssd1 vccd1 vccd1 trainable_nn_371/HI la_data_out[123]
-+ sky130_fd_sc_hd__conb_1
 XFILLER_171_541 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_144_755 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
 XFILLER_116_457 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
@@ -8852,13 +8845,7 @@ XFILLER_144_701 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_184_881 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_129_797 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_89_1455 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
-Xtrainable_nn_350 vssd1 vssd1 vccd1 vccd1 trainable_nn_350/HI la_data_out[102]
-+ sky130_fd_sc_hd__conb_1
-Xtrainable_nn_361 vssd1 vssd1 vccd1 vccd1 trainable_nn_361/HI la_data_out[113]
-+ sky130_fd_sc_hd__conb_1
 XFILLER_183_391 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
-Xtrainable_nn_372 vssd1 vssd1 vccd1 vccd1 trainable_nn_372/HI la_data_out[124]
-+ sky130_fd_sc_hd__conb_1
 XFILLER_171_553 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
 XFILLER_116_469 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
 XFILLER_154_1701 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
@@ -10348,15 +10335,7 @@ XFILLER_144_713 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_15_1399 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
 XFILLER_184_893 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_7_561 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
-Xtrainable_nn_340 vssd1 vssd1 vccd1 vccd1 trainable_nn_340/HI la_data_out[92]
-+ sky130_fd_sc_hd__conb_1
-Xtrainable_nn_351 vssd1 vssd1 vccd1 vccd1 trainable_nn_351/HI la_data_out[103]
-+ sky130_fd_sc_hd__conb_1
-Xtrainable_nn_362 vssd1 vssd1 vccd1 vccd1 trainable_nn_362/HI la_data_out[114]
-+ sky130_fd_sc_hd__conb_1
 XFILLER_143_223 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
-Xtrainable_nn_373 vssd1 vssd1 vccd1 vccd1 trainable_nn_373/HI la_data_out[125]
-+ sky130_fd_sc_hd__conb_1
 XFILLER_144_757 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_98_811 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
 XFILLER_135_1101 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
@@ -10737,6 +10716,7 @@ XFILLER_202_1577 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_181_137 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_163_841 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_107_223 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
+Xtrainable_nn_370 vssd1 vssd1 vccd1 vccd1 trainable_nn_370/HI la_data_out[122] sky130_fd_sc_hd__conb_1
 XFILLER_68_1315 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
 XFILLER_108_757 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_11_1561 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
@@ -11831,22 +11811,12 @@ XFILLER_102_1315 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
 XFILLER_204_1085 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
 XFILLER_184_861 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
 XFILLER_129_777 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
-Xtrainable_nn_330 vssd1 vssd1 vccd1 vccd1 trainable_nn_330/HI la_data_out[82]
-+ sky130_fd_sc_hd__conb_1
 XFILLER_128_265 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
-Xtrainable_nn_341 vssd1 vssd1 vccd1 vccd1 trainable_nn_341/HI la_data_out[93]
-+ sky130_fd_sc_hd__conb_1
 XFILLER_89_1457 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_144_725 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_7_573 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
-Xtrainable_nn_352 vssd1 vssd1 vccd1 vccd1 trainable_nn_352/HI la_data_out[104]
-+ sky130_fd_sc_hd__conb_1
 XFILLER_176_1427 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
-Xtrainable_nn_363 vssd1 vssd1 vccd1 vccd1 trainable_nn_363/HI la_data_out[115]
-+ sky130_fd_sc_hd__conb_1
 XFILLER_183_393 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
-Xtrainable_nn_374 vssd1 vssd1 vccd1 vccd1 trainable_nn_374/HI la_data_out[126]
-+ sky130_fd_sc_hd__conb_1
 XFILLER_144_769 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_48_1110 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_100_1061 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
@@ -12213,7 +12183,9 @@ XFILLER_108_725 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_100_1819 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
 XFILLER_87_1917 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_202_1589 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
+Xtrainable_nn_360 vssd1 vssd1 vccd1 vccd1 trainable_nn_360/HI la_data_out[112] sky130_fd_sc_hd__conb_1
 XFILLER_147_393 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
+Xtrainable_nn_371 vssd1 vssd1 vccd1 vccd1 trainable_nn_371/HI la_data_out[123] sky130_fd_sc_hd__conb_1
 XFILLER_181_149 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_163_853 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_108_769 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
@@ -13353,26 +13325,14 @@ XFILLER_15_1357 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_128_233 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_106_1485 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_89_1425 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
-Xtrainable_nn_320 vssd1 vssd1 vccd1 vccd1 trainable_nn_320/HI la_data_out[72]
-+ sky130_fd_sc_hd__conb_1
 XFILLER_50_1259 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
 XFILLER_190_309 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
-Xtrainable_nn_331 vssd1 vssd1 vccd1 vccd1 trainable_nn_331/HI la_data_out[83]
-+ sky130_fd_sc_hd__conb_1
 XFILLER_183_361 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
-Xtrainable_nn_342 vssd1 vssd1 vccd1 vccd1 trainable_nn_342/HI la_data_out[94]
-+ sky130_fd_sc_hd__conb_1
 XFILLER_128_277 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
-Xtrainable_nn_353 vssd1 vssd1 vccd1 vccd1 trainable_nn_353/HI la_data_out[105]
-+ sky130_fd_sc_hd__conb_1
 XFILLER_89_1469 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_144_737 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_7_585 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
-Xtrainable_nn_364 vssd1 vssd1 vccd1 vccd1 trainable_nn_364/HI la_data_out[116]
-+ sky130_fd_sc_hd__conb_1
 XFILLER_143_225 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
-Xtrainable_nn_375 vssd1 vssd1 vccd1 vccd1 trainable_nn_375/HI la_data_out[127]
-+ sky130_fd_sc_hd__conb_1
 XFILLER_125_951 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
 XANTENNA__676__A0 _602_/A vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__diode_2
 XFILLER_48_1122 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
@@ -13730,9 +13690,12 @@ XFILLER_194_489 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_159_1401 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_147_361 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_163_821 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
+Xtrainable_nn_350 vssd1 vssd1 vccd1 vccd1 trainable_nn_350/HI la_data_out[102] sky130_fd_sc_hd__conb_1
 XFILLER_33_1287 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
 XFILLER_108_737 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
+Xtrainable_nn_361 vssd1 vssd1 vccd1 vccd1 trainable_nn_361/HI la_data_out[113] sky130_fd_sc_hd__conb_1
 XFILLER_107_225 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
+Xtrainable_nn_372 vssd1 vssd1 vccd1 vccd1 trainable_nn_372/HI la_data_out[124] sky130_fd_sc_hd__conb_1
 XFILLER_198_1483 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
 XFILLER_68_1317 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_174_15 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
@@ -14837,29 +14800,17 @@ XFILLER_106_1453 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_54_1385 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_102_1317 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_15_1369 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
-Xtrainable_nn_310 vssd1 vssd1 vccd1 vccd1 trainable_nn_310/HI la_data_out[62]
-+ sky130_fd_sc_hd__conb_1
 XFILLER_128_245 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
 XFILLER_106_1497 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
-Xtrainable_nn_321 vssd1 vssd1 vccd1 vccd1 trainable_nn_321/HI la_data_out[73]
-+ sky130_fd_sc_hd__conb_1
 XFILLER_51_81 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_89_1437 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
-Xtrainable_nn_332 vssd1 vssd1 vccd1 vccd1 trainable_nn_332/HI la_data_out[84]
-+ sky130_fd_sc_hd__conb_1
 XFILLER_141_1399 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
-Xtrainable_nn_343 vssd1 vssd1 vccd1 vccd1 trainable_nn_343/HI la_data_out[95]
-+ sky130_fd_sc_hd__conb_1
 XFILLER_156_587 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
 XFILLER_183_373 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_167_81 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_128_289 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
-Xtrainable_nn_354 vssd1 vssd1 vccd1 vccd1 trainable_nn_354/HI la_data_out[106]
-+ sky130_fd_sc_hd__conb_1
 XFILLER_176_1429 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_144_749 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
-Xtrainable_nn_365 vssd1 vssd1 vccd1 vccd1 trainable_nn_365/HI la_data_out[117]
-+ sky130_fd_sc_hd__conb_1
 XFILLER_7_597 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
 XFILLER_143_237 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_67_1735 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
@@ -15211,13 +15162,17 @@ XFILLER_21_187 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
 XFILLER_120_1203 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
 XFILLER_13_1829 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_52_1889 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
+Xtrainable_nn_340 vssd1 vssd1 vccd1 vccd1 trainable_nn_340/HI la_data_out[92] sky130_fd_sc_hd__conb_1
 XFILLER_175_671 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
 XFILLER_159_1413 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_147_373 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
+Xtrainable_nn_351 vssd1 vssd1 vccd1 vccd1 trainable_nn_351/HI la_data_out[103] sky130_fd_sc_hd__conb_1
 XFILLER_163_833 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
+Xtrainable_nn_362 vssd1 vssd1 vccd1 vccd1 trainable_nn_362/HI la_data_out[114] sky130_fd_sc_hd__conb_1
 XFILLER_194_1315 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
 XFILLER_162_321 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_108_749 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
+Xtrainable_nn_373 vssd1 vssd1 vccd1 vccd1 trainable_nn_373/HI la_data_out[125] sky130_fd_sc_hd__conb_1
 XFILLER_107_237 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_68_1329 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_159_1457 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
@@ -16341,30 +16296,16 @@ XFILLER_106_1465 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_11_561 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_54_1397 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_156_533 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
-Xtrainable_nn_300 vssd1 vssd1 vccd1 vccd1 trainable_nn_300/HI la_data_out[52]
-+ sky130_fd_sc_hd__conb_1
-Xtrainable_nn_311 vssd1 vssd1 vccd1 vccd1 trainable_nn_311/HI la_data_out[63]
-+ sky130_fd_sc_hd__conb_1
 XFILLER_117_909 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_102_1329 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_32_1651 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
-Xtrainable_nn_322 vssd1 vssd1 vccd1 vccd1 trainable_nn_322/HI la_data_out[74]
-+ sky130_fd_sc_hd__conb_1
-Xtrainable_nn_333 vssd1 vssd1 vccd1 vccd1 trainable_nn_333/HI la_data_out[85]
-+ sky130_fd_sc_hd__conb_1
 XFILLER_51_93 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_89_1449 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
 XFILLER_171_503 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
-Xtrainable_nn_344 vssd1 vssd1 vccd1 vccd1 trainable_nn_344/HI la_data_out[96]
-+ sky130_fd_sc_hd__conb_1
 XFILLER_143_205 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_116_419 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
-Xtrainable_nn_355 vssd1 vssd1 vccd1 vccd1 trainable_nn_355/HI la_data_out[107]
-+ sky130_fd_sc_hd__conb_1
 XFILLER_183_385 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
 XFILLER_167_93 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
-Xtrainable_nn_366 vssd1 vssd1 vccd1 vccd1 trainable_nn_366/HI la_data_out[118]
-+ sky130_fd_sc_hd__conb_1
 XFILLER_143_249 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_125_953 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_158_1875 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
@@ -16735,13 +16676,18 @@ XFILLER_33_1245 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_194_469 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
 XFILLER_124_1373 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_198_1441 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
+Xtrainable_nn_330 vssd1 vssd1 vccd1 vccd1 trainable_nn_330/HI la_data_out[82] sky130_fd_sc_hd__conb_1
 XFILLER_135_503 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
+Xtrainable_nn_341 vssd1 vssd1 vccd1 vccd1 trainable_nn_341/HI la_data_out[93] sky130_fd_sc_hd__conb_1
 XFILLER_107_205 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
+Xtrainable_nn_352 vssd1 vssd1 vccd1 vccd1 trainable_nn_352/HI la_data_out[104] sky130_fd_sc_hd__conb_1
 XFILLER_33_1289 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
+Xtrainable_nn_363 vssd1 vssd1 vccd1 vccd1 trainable_nn_363/HI la_data_out[115] sky130_fd_sc_hd__conb_1
 XFILLER_159_1425 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_147_385 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
 XFILLER_120_1259 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
 XFILLER_198_1485 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
+Xtrainable_nn_374 vssd1 vssd1 vccd1 vccd1 trainable_nn_374/HI la_data_out[126] sky130_fd_sc_hd__conb_1
 XFILLER_200_1261 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_162_333 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_107_249 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
@@ -17836,30 +17782,16 @@ XFILLER_50_1229 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_141_1357 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_106_1477 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
 XFILLER_11_573 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
-Xtrainable_nn_301 vssd1 vssd1 vccd1 vccd1 trainable_nn_301/HI la_data_out[53]
-+ sky130_fd_sc_hd__conb_1
 XFILLER_156_545 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_7_533 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
-Xtrainable_nn_312 vssd1 vssd1 vccd1 vccd1 trainable_nn_312/HI la_data_out[64]
-+ sky130_fd_sc_hd__conb_1
-Xtrainable_nn_323 vssd1 vssd1 vccd1 vccd1 trainable_nn_323/HI la_data_out[75]
-+ sky130_fd_sc_hd__conb_1
-Xtrainable_nn_334 vssd1 vssd1 vccd1 vccd1 trainable_nn_334/HI la_data_out[86]
-+ sky130_fd_sc_hd__conb_1
 XFILLER_176_1409 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_156_589 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_123_1791 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
-Xtrainable_nn_345 vssd1 vssd1 vccd1 vccd1 trainable_nn_345/HI la_data_out[97]
-+ sky130_fd_sc_hd__conb_1
 XFILLER_109_461 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
-Xtrainable_nn_356 vssd1 vssd1 vccd1 vccd1 trainable_nn_356/HI la_data_out[108]
-+ sky130_fd_sc_hd__conb_1
 XFILLER_158_1821 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_143_217 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
 XFILLER_125_921 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_13_1073 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
-Xtrainable_nn_367 vssd1 vssd1 vccd1 vccd1 trainable_nn_367/HI la_data_out[119]
-+ sky130_fd_sc_hd__conb_1
 XFILLER_171_559 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
 XFILLER_139_1231 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
 XFILLER_119_1805 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
@@ -18215,15 +18147,21 @@ XFILLER_124_1341 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_37_1393 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
 XFILLER_52_1869 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
 XFILLER_120_1205 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
+Xtrainable_nn_320 vssd1 vssd1 vccd1 vccd1 trainable_nn_320/HI la_data_out[72] sky130_fd_sc_hd__conb_1
 XFILLER_33_1257 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_124_1385 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
+Xtrainable_nn_331 vssd1 vssd1 vccd1 vccd1 trainable_nn_331/HI la_data_out[83] sky130_fd_sc_hd__conb_1
 XFILLER_198_1453 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_175_673 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_11_1511 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
+Xtrainable_nn_342 vssd1 vssd1 vccd1 vccd1 trainable_nn_342/HI la_data_out[94] sky130_fd_sc_hd__conb_1
 XFILLER_162_301 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
+Xtrainable_nn_353 vssd1 vssd1 vccd1 vccd1 trainable_nn_353/HI la_data_out[105] sky130_fd_sc_hd__conb_1
 XFILLER_107_217 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
+Xtrainable_nn_364 vssd1 vssd1 vccd1 vccd1 trainable_nn_364/HI la_data_out[116] sky130_fd_sc_hd__conb_1
 XFILLER_68_1309 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
 XFILLER_194_1317 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
+Xtrainable_nn_375 vssd1 vssd1 vccd1 vccd1 trainable_nn_375/HI la_data_out[127] sky130_fd_sc_hd__conb_1
 XFILLER_159_1437 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_198_1497 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_190_643 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
@@ -19320,30 +19258,16 @@ XFILLER_156_513 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_196_693 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
 XFILLER_51_51 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
 XFILLER_102_1309 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
-Xtrainable_nn_302 vssd1 vssd1 vccd1 vccd1 trainable_nn_302/HI la_data_out[54]
-+ sky130_fd_sc_hd__conb_1
 XFILLER_195_181 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_141_1369 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_11_585 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_156_557 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
-Xtrainable_nn_313 vssd1 vssd1 vccd1 vccd1 trainable_nn_313/HI la_data_out[65]
-+ sky130_fd_sc_hd__conb_1
 XFILLER_167_51 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
 XFILLER_7_545 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
-Xtrainable_nn_324 vssd1 vssd1 vccd1 vccd1 trainable_nn_324/HI la_data_out[76]
-+ sky130_fd_sc_hd__conb_1
 XFILLER_32_1653 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
-Xtrainable_nn_335 vssd1 vssd1 vccd1 vccd1 trainable_nn_335/HI la_data_out[87]
-+ sky130_fd_sc_hd__conb_1
 XFILLER_171_505 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
-Xtrainable_nn_346 vssd1 vssd1 vccd1 vccd1 trainable_nn_346/HI la_data_out[98]
-+ sky130_fd_sc_hd__conb_1
 XFILLER_13_1063 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
-Xtrainable_nn_357 vssd1 vssd1 vccd1 vccd1 trainable_nn_357/HI la_data_out[109]
-+ sky130_fd_sc_hd__conb_1
 XFILLER_109_473 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
-Xtrainable_nn_368 vssd1 vssd1 vccd1 vccd1 trainable_nn_368/HI la_data_out[120]
-+ sky130_fd_sc_hd__conb_1
 XFILLER_67_1705 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_158_1833 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_125_933 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
@@ -19685,15 +19609,21 @@ XFILLER_159_181 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_202_1539 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
 XFILLER_198_1421 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
 XFILLER_175_641 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
+Xtrainable_nn_310 vssd1 vssd1 vccd1 vccd1 trainable_nn_310/HI la_data_out[62] sky130_fd_sc_hd__conb_1
+Xtrainable_nn_321 vssd1 vssd1 vccd1 vccd1 trainable_nn_321/HI la_data_out[73] sky130_fd_sc_hd__conb_1
 XFILLER_30_691 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_8
 XFILLER_120_1217 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
+Xtrainable_nn_332 vssd1 vssd1 vccd1 vccd1 trainable_nn_332/HI la_data_out[84] sky130_fd_sc_hd__conb_1
 XFILLER_33_1269 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_135_505 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_124_1397 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
+Xtrainable_nn_343 vssd1 vssd1 vccd1 vccd1 trainable_nn_343/HI la_data_out[95] sky130_fd_sc_hd__conb_1
 XFILLER_15_1681 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
+Xtrainable_nn_354 vssd1 vssd1 vccd1 vccd1 trainable_nn_354/HI la_data_out[106] sky130_fd_sc_hd__conb_1
 XFILLER_198_1465 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_175_685 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_200_1241 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
+Xtrainable_nn_365 vssd1 vssd1 vccd1 vccd1 trainable_nn_365/HI la_data_out[117] sky130_fd_sc_hd__conb_1
 XFILLER_102_1651 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
 XFILLER_194_1329 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_159_1449 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
@@ -20819,35 +20749,21 @@ XFILLER_141_1337 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
 XFILLER_156_525 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
 XFILLER_180_1397 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_32_1621 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
-Xtrainable_nn_303 vssd1 vssd1 vccd1 vccd1 trainable_nn_303/HI la_data_out[55]
-+ sky130_fd_sc_hd__conb_1
 XFILLER_71_1681 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_195_193 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
-Xtrainable_nn_314 vssd1 vssd1 vccd1 vccd1 trainable_nn_314/HI la_data_out[66]
-+ sky130_fd_sc_hd__conb_1
 XFILLER_184_867 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
 XFILLER_11_597 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
-Xtrainable_nn_325 vssd1 vssd1 vccd1 vccd1 trainable_nn_325/HI la_data_out[77]
-+ sky130_fd_sc_hd__conb_1
 XFILLER_156_569 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_32_1665 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_52_1091 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
 XFILLER_109_441 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
 XFILLER_7_557 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_3
-Xtrainable_nn_336 vssd1 vssd1 vccd1 vccd1 trainable_nn_336/HI la_data_out[88]
-+ sky130_fd_sc_hd__conb_1
 XFILLER_158_1801 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_123_1793 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
-Xtrainable_nn_347 vssd1 vssd1 vccd1 vccd1 trainable_nn_347/HI la_data_out[99]
-+ sky130_fd_sc_hd__conb_1
 XFILLER_197_1861 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_171_517 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
-Xtrainable_nn_358 vssd1 vssd1 vccd1 vccd1 trainable_nn_358/HI la_data_out[110]
-+ sky130_fd_sc_hd__conb_1
 XFILLER_87_1121 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_137_783 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
-Xtrainable_nn_369 vssd1 vssd1 vccd1 vccd1 trainable_nn_369/HI la_data_out[121]
-+ sky130_fd_sc_hd__conb_1
 XFILLER_109_485 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_67_1717 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_158_1845 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
@@ -21187,18 +21103,25 @@ XFILLER_72_1253 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
 XFILLER_206_1665 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_163_1381 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_21_169 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
+Xtrainable_nn_300 vssd1 vssd1 vccd1 vccd1 trainable_nn_300/HI la_data_out[52] sky130_fd_sc_hd__conb_1
 XFILLER_124_1365 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
+Xtrainable_nn_311 vssd1 vssd1 vccd1 vccd1 trainable_nn_311/HI la_data_out[63] sky130_fd_sc_hd__conb_1
 XFILLER_72_1297 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_159_193 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_148_867 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
+Xtrainable_nn_322 vssd1 vssd1 vccd1 vccd1 trainable_nn_322/HI la_data_out[74] sky130_fd_sc_hd__conb_1
 XFILLER_175_653 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_174_141 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
+Xtrainable_nn_333 vssd1 vssd1 vccd1 vccd1 trainable_nn_333/HI la_data_out[85] sky130_fd_sc_hd__conb_1
 XFILLER_190_601 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_120_1229 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
+Xtrainable_nn_344 vssd1 vssd1 vccd1 vccd1 trainable_nn_344/HI la_data_out[96] sky130_fd_sc_hd__conb_1
 XFILLER_135_517 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_11_1513 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
+Xtrainable_nn_355 vssd1 vssd1 vccd1 vccd1 trainable_nn_355/HI la_data_out[107] sky130_fd_sc_hd__conb_1
 XFILLER_175_697 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_15_1693 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
+Xtrainable_nn_366 vssd1 vssd1 vccd1 vccd1 trainable_nn_366/HI la_data_out[118] sky130_fd_sc_hd__conb_1
 XFILLER_198_1477 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
 XFILLER_200_1253 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
 Xinput60 la_oenb[57] vssd1 vssd1 vccd1 vccd1 _571_/A sky130_fd_sc_hd__dlymetal6s2s_1
@@ -22341,24 +22264,12 @@ XFILLER_7_503 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
 XFILLER_201_1903 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
 XFILLER_32_1633 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_13_1021 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
-Xtrainable_nn_304 vssd1 vssd1 vccd1 vccd1 trainable_nn_304/HI la_data_out[56]
-+ sky130_fd_sc_hd__conb_1
 XFILLER_123_1761 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
-Xtrainable_nn_315 vssd1 vssd1 vccd1 vccd1 trainable_nn_315/HI la_data_out[67]
-+ sky130_fd_sc_hd__conb_1
 XFILLER_71_1693 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
-Xtrainable_nn_326 vssd1 vssd1 vccd1 vccd1 trainable_nn_326/HI la_data_out[78]
-+ sky130_fd_sc_hd__conb_1
-Xtrainable_nn_337 vssd1 vssd1 vccd1 vccd1 trainable_nn_337/HI la_data_out[89]
-+ sky130_fd_sc_hd__conb_1
 XFILLER_32_1677 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_13_1065 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_8
 XANTENNA_input70_A wbs_cyc_i vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__diode_2
-Xtrainable_nn_348 vssd1 vssd1 vccd1 vccd1 trainable_nn_348/HI la_data_out[100]
-+ sky130_fd_sc_hd__conb_1
 XFILLER_158_1813 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
-Xtrainable_nn_359 vssd1 vssd1 vccd1 vccd1 trainable_nn_359/HI la_data_out[111]
-+ sky130_fd_sc_hd__conb_1
 XFILLER_197_1873 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_171_529 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_139_1201 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
@@ -22696,16 +22607,23 @@ XFILLER_188_993 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_206_1677 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_163_1393 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
 XFILLER_159_161 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
+Xtrainable_nn_301 vssd1 vssd1 vccd1 vccd1 trainable_nn_301/HI la_data_out[53] sky130_fd_sc_hd__conb_1
 XANTENNA__605__A _918_/A vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__diode_2
+Xtrainable_nn_312 vssd1 vssd1 vccd1 vccd1 trainable_nn_312/HI la_data_out[64] sky130_fd_sc_hd__conb_1
+Xtrainable_nn_323 vssd1 vssd1 vccd1 vccd1 trainable_nn_323/HI la_data_out[75] sky130_fd_sc_hd__conb_1
 XFILLER_175_665 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
 XFILLER_15_1661 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
+Xtrainable_nn_334 vssd1 vssd1 vccd1 vccd1 trainable_nn_334/HI la_data_out[86] sky130_fd_sc_hd__conb_1
 XFILLER_50_1541 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
+Xtrainable_nn_345 vssd1 vssd1 vccd1 vccd1 trainable_nn_345/HI la_data_out[97] sky130_fd_sc_hd__conb_1
 XFILLER_174_153 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_190_613 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
+Xtrainable_nn_356 vssd1 vssd1 vccd1 vccd1 trainable_nn_356/HI la_data_out[108] sky130_fd_sc_hd__conb_1
 XFILLER_194_1309 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
 XFILLER_135_529 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_11_1525 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 Xinput50 la_oenb[47] vssd1 vssd1 vccd1 vccd1 _490_/A sky130_fd_sc_hd__clkbuf_2
+Xtrainable_nn_367 vssd1 vssd1 vccd1 vccd1 trainable_nn_367/HI la_data_out[119] sky130_fd_sc_hd__conb_1
 XFILLER_102_1653 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 Xinput61 la_oenb[58] vssd1 vssd1 vccd1 vccd1 _577_/A sky130_fd_sc_hd__clkbuf_1
 XFILLER_128_581 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
@@ -23803,26 +23721,16 @@ XFILLER_168_365 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_204_1049 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_184_825 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_71_1661 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
-Xtrainable_nn_305 vssd1 vssd1 vccd1 vccd1 trainable_nn_305/HI la_data_out[57]
-+ sky130_fd_sc_hd__conb_1
 XFILLER_183_335 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
-Xtrainable_nn_316 vssd1 vssd1 vccd1 vccd1 trainable_nn_316/HI la_data_out[68]
-+ sky130_fd_sc_hd__conb_1
 XFILLER_32_1645 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
 XFILLER_184_869 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_13_1033 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_137_741 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_123_1773 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
-Xtrainable_nn_327 vssd1 vssd1 vccd1 vccd1 trainable_nn_327/HI la_data_out[79]
-+ sky130_fd_sc_hd__conb_1
 XFILLER_197_1841 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
 XFILLER_104_1161 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
-Xtrainable_nn_338 vssd1 vssd1 vccd1 vccd1 trainable_nn_338/HI la_data_out[90]
-+ sky130_fd_sc_hd__conb_1
 XFILLER_52_1093 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_87_1101 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
-Xtrainable_nn_349 vssd1 vssd1 vccd1 vccd1 trainable_nn_349/HI la_data_out[101]
-+ sky130_fd_sc_hd__conb_1
 XFILLER_32_1689 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_136_251 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
 XFILLER_13_1077 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
@@ -24163,19 +24071,26 @@ XFILLER_21_149 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_148_825 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_202_1509 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_206_1689 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
+Xtrainable_nn_302 vssd1 vssd1 vccd1 vccd1 trainable_nn_302/HI la_data_out[54] sky130_fd_sc_hd__conb_1
+Xtrainable_nn_313 vssd1 vssd1 vccd1 vccd1 trainable_nn_313/HI la_data_out[65] sky130_fd_sc_hd__conb_1
 XFILLER_174_121 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_148_869 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_147_335 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
+Xtrainable_nn_324 vssd1 vssd1 vccd1 vccd1 trainable_nn_324/HI la_data_out[76] sky130_fd_sc_hd__conb_1
+Xtrainable_nn_335 vssd1 vssd1 vccd1 vccd1 trainable_nn_335/HI la_data_out[87] sky130_fd_sc_hd__conb_1
 XFILLER_102_1621 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_15_1673 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
+Xtrainable_nn_346 vssd1 vssd1 vccd1 vccd1 trainable_nn_346/HI la_data_out[98] sky130_fd_sc_hd__conb_1
 XFILLER_50_1553 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_141_1681 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 Xinput40 la_oenb[37] vssd1 vssd1 vccd1 vccd1 _416_/A sky130_fd_sc_hd__clkbuf_2
+Xtrainable_nn_357 vssd1 vssd1 vccd1 vccd1 trainable_nn_357/HI la_data_out[109] sky130_fd_sc_hd__conb_1
 XFILLER_174_165 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_190_625 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_163_839 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
 XFILLER_11_1537 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 Xinput51 la_oenb[48] vssd1 vssd1 vccd1 vccd1 _501_/A1 sky130_fd_sc_hd__dlymetal6s2s_1
+Xtrainable_nn_368 vssd1 vssd1 vccd1 vccd1 trainable_nn_368/HI la_data_out[120] sky130_fd_sc_hd__conb_1
 Xinput62 la_oenb[59] vssd1 vssd1 vccd1 vccd1 _360_/A4 sky130_fd_sc_hd__clkbuf_2
 XFILLER_122_1091 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
 XFILLER_102_1665 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
@@ -25287,19 +25202,11 @@ XFILLER_13_1001 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
 XFILLER_71_1673 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
 XFILLER_51_55 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
 XFILLER_52_1061 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
-Xtrainable_nn_306 vssd1 vssd1 vccd1 vccd1 trainable_nn_306/HI la_data_out[58]
-+ sky130_fd_sc_hd__conb_1
-Xtrainable_nn_317 vssd1 vssd1 vccd1 vccd1 trainable_nn_317/HI la_data_out[69]
-+ sky130_fd_sc_hd__conb_1
 XFILLER_167_55 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
-Xtrainable_nn_328 vssd1 vssd1 vccd1 vccd1 trainable_nn_328/HI la_data_out[80]
-+ sky130_fd_sc_hd__conb_1
 XANTENNA__515__A1 _520_/A vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__diode_2
 XFILLER_123_1785 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
 XFILLER_13_1045 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_137_753 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
-Xtrainable_nn_339 vssd1 vssd1 vccd1 vccd1 trainable_nn_339/HI la_data_out[91]
-+ sky130_fd_sc_hd__conb_1
 XFILLER_104_1173 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_87_1113 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
 XFILLER_178_1241 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
@@ -25628,18 +25535,25 @@ XTAP_1390 vssd1 vccd1 sky130_fd_sc_hd__tapvpwrvgnd_1
 XFILLER_52_1819 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
 XFILLER_187_461 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_148_837 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
+Xtrainable_nn_303 vssd1 vssd1 vccd1 vccd1 trainable_nn_303/HI la_data_out[55] sky130_fd_sc_hd__conb_1
 XANTENNA__605__C _920_/A vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__diode_2
+Xtrainable_nn_314 vssd1 vssd1 vccd1 vccd1 trainable_nn_314/HI la_data_out[66] sky130_fd_sc_hd__conb_1
 XFILLER_50_1521 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
+Xtrainable_nn_325 vssd1 vssd1 vccd1 vccd1 trainable_nn_325/HI la_data_out[77] sky130_fd_sc_hd__conb_1
 XFILLER_174_133 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
+Xtrainable_nn_336 vssd1 vssd1 vccd1 vccd1 trainable_nn_336/HI la_data_out[88] sky130_fd_sc_hd__conb_1
 XFILLER_11_1505 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
 Xinput30 la_data_in[61] vssd1 vssd1 vccd1 vccd1 _598_/A2 sky130_fd_sc_hd__clkbuf_1
+Xtrainable_nn_347 vssd1 vssd1 vccd1 vccd1 trainable_nn_347/HI la_data_out[99] sky130_fd_sc_hd__conb_1
 XFILLER_102_1633 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 Xinput41 la_oenb[38] vssd1 vssd1 vccd1 vccd1 _422_/A sky130_fd_sc_hd__dlymetal6s2s_1
+Xtrainable_nn_358 vssd1 vssd1 vccd1 vccd1 trainable_nn_358/HI la_data_out[110] sky130_fd_sc_hd__conb_1
 XFILLER_50_1565 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_176_1701 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
 XFILLER_141_1693 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_116_701 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 Xinput52 la_oenb[49] vssd1 vssd1 vccd1 vccd1 _509_/A sky130_fd_sc_hd__dlymetal6s2s_1
+Xtrainable_nn_369 vssd1 vssd1 vccd1 vccd1 trainable_nn_369/HI la_data_out[121] sky130_fd_sc_hd__conb_1
 XFILLER_174_177 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_156_881 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XANTENNA__902__A _902_/A vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__diode_2
@@ -26761,15 +26675,9 @@ XFILLER_201_1917 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_184_849 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_137_721 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
 XFILLER_104_1141 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
-Xtrainable_nn_307 vssd1 vssd1 vccd1 vccd1 trainable_nn_307/HI la_data_out[59]
-+ sky130_fd_sc_hd__conb_1
 XFILLER_52_1073 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_183_337 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_129_3 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
-Xtrainable_nn_318 vssd1 vssd1 vccd1 vccd1 trainable_nn_318/HI la_data_out[70]
-+ sky130_fd_sc_hd__conb_1
-Xtrainable_nn_329 vssd1 vssd1 vccd1 vccd1 trainable_nn_329/HI la_data_out[81]
-+ sky130_fd_sc_hd__conb_1
 XFILLER_137_765 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_100_1005 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_13_1057 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
@@ -27111,14 +27019,20 @@ XFILLER_203_783 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
 XFILLER_187_473 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_37_1399 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
 XFILLER_148_849 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
+Xtrainable_nn_304 vssd1 vssd1 vccd1 vccd1 trainable_nn_304/HI la_data_out[56] sky130_fd_sc_hd__conb_1
 XFILLER_147_337 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
+Xtrainable_nn_315 vssd1 vssd1 vccd1 vccd1 trainable_nn_315/HI la_data_out[67] sky130_fd_sc_hd__conb_1
+Xtrainable_nn_326 vssd1 vssd1 vccd1 vccd1 trainable_nn_326/HI la_data_out[78] sky130_fd_sc_hd__conb_1
 XFILLER_50_1533 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
 XFILLER_204_1371 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
 XFILLER_141_1661 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 Xinput20 la_data_in[51] vssd1 vssd1 vccd1 vccd1 _525_/A2 sky130_fd_sc_hd__clkbuf_1
+Xtrainable_nn_337 vssd1 vssd1 vccd1 vccd1 trainable_nn_337/HI la_data_out[89] sky130_fd_sc_hd__conb_1
+Xtrainable_nn_348 vssd1 vssd1 vccd1 vccd1 trainable_nn_348/HI la_data_out[100] sky130_fd_sc_hd__conb_1
 Xinput31 la_data_in[62] vssd1 vssd1 vccd1 vccd1 _600_/B sky130_fd_sc_hd__clkbuf_1
 XFILLER_162_307 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
 Xinput42 la_oenb[39] vssd1 vssd1 vccd1 vccd1 _430_/A sky130_fd_sc_hd__clkbuf_2
+Xtrainable_nn_359 vssd1 vssd1 vccd1 vccd1 trainable_nn_359/HI la_data_out[111] sky130_fd_sc_hd__conb_1
 XFILLER_50_1577 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_116_713 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_102_1645 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
@@ -28241,10 +28155,6 @@ XFILLER_211_486 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_183_305 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_196_699 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
 XFILLER_51_57 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
-Xtrainable_nn_308 vssd1 vssd1 vccd1 vccd1 trainable_nn_308/HI la_data_out[60]
-+ sky130_fd_sc_hd__conb_1
-Xtrainable_nn_319 vssd1 vssd1 vccd1 vccd1 trainable_nn_319/HI la_data_out[71]
-+ sky130_fd_sc_hd__conb_1
 XFILLER_183_349 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_167_57 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_52_1085 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
@@ -28588,13 +28498,18 @@ XTAP_1392 vssd1 vccd1 sky130_fd_sc_hd__tapvpwrvgnd_1
 XFILLER_30_631 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_147_305 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_187_485 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
+Xtrainable_nn_305 vssd1 vssd1 vccd1 vccd1 trainable_nn_305/HI la_data_out[57] sky130_fd_sc_hd__conb_1
+Xtrainable_nn_316 vssd1 vssd1 vccd1 vccd1 trainable_nn_316/HI la_data_out[68] sky130_fd_sc_hd__conb_1
 XFILLER_198_1427 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
 XFILLER_200_1203 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
 XFILLER_147_349 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 Xinput10 la_data_in[41] vssd1 vssd1 vccd1 vccd1 _451_/A2 sky130_fd_sc_hd__dlymetal6s2s_1
+Xtrainable_nn_327 vssd1 vssd1 vccd1 vccd1 trainable_nn_327/HI la_data_out[79] sky130_fd_sc_hd__conb_1
 XFILLER_163_809 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 Xinput21 la_data_in[52] vssd1 vssd1 vccd1 vccd1 _531_/A2 sky130_fd_sc_hd__clkbuf_1
+Xtrainable_nn_338 vssd1 vssd1 vccd1 vccd1 trainable_nn_338/HI la_data_out[90] sky130_fd_sc_hd__conb_1
 XFILLER_141_1673 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
+Xtrainable_nn_349 vssd1 vssd1 vccd1 vccd1 trainable_nn_349/HI la_data_out[101] sky130_fd_sc_hd__conb_1
 Xinput32 la_data_in[63] vssd1 vssd1 vccd1 vccd1 _608_/A2 sky130_fd_sc_hd__clkbuf_1
 XANTENNA__471__A _583_/A vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__diode_2
 XFILLER_156_861 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
@@ -29722,8 +29637,6 @@ XFILLER_211_498 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
 XFILLER_183_317 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_149_561 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_7_519 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
-Xtrainable_nn_309 vssd1 vssd1 vccd1 vccd1 trainable_nn_309/HI la_data_out[61]
-+ sky130_fd_sc_hd__conb_1
 XFILLER_51_69 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_167_69 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_164_531 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
@@ -30092,11 +30005,15 @@ XFILLER_30_643 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
 XFILLER_147_317 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_19_1791 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
 XFILLER_187_497 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
+Xtrainable_nn_306 vssd1 vssd1 vccd1 vccd1 trainable_nn_306/HI la_data_out[58] sky130_fd_sc_hd__conb_1
 XANTENNA__697__CLK _746_/CLK vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__diode_2
+Xtrainable_nn_317 vssd1 vssd1 vccd1 vccd1 trainable_nn_317/HI la_data_out[69] sky130_fd_sc_hd__conb_1
+Xtrainable_nn_328 vssd1 vssd1 vccd1 vccd1 trainable_nn_328/HI la_data_out[80] sky130_fd_sc_hd__conb_1
 Xinput11 la_data_in[42] vssd1 vssd1 vccd1 vccd1 input11/X sky130_fd_sc_hd__clkbuf_1
 XFILLER_204_1373 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_128_531 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
 Xinput22 la_data_in[53] vssd1 vssd1 vccd1 vccd1 _539_/A2 sky130_fd_sc_hd__clkbuf_1
+Xtrainable_nn_339 vssd1 vssd1 vccd1 vccd1 trainable_nn_339/HI la_data_out[91] sky130_fd_sc_hd__conb_1
 Xinput33 la_data_in[64] vssd1 vssd1 vccd1 vccd1 _344_/A0 sky130_fd_sc_hd__clkbuf_4
 XFILLER_162_309 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 Xinput44 la_oenb[41] vssd1 vssd1 vccd1 vccd1 _449_/A sky130_fd_sc_hd__clkbuf_2
@@ -31549,9 +31466,12 @@ XFILLER_163_1399 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
 XFILLER_15_1623 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
 XFILLER_204_1341 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_147_329 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
+Xtrainable_nn_307 vssd1 vssd1 vccd1 vccd1 trainable_nn_307/HI la_data_out[59] sky130_fd_sc_hd__conb_1
 XFILLER_198_1429 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
+Xtrainable_nn_318 vssd1 vssd1 vccd1 vccd1 trainable_nn_318/HI la_data_out[70] sky130_fd_sc_hd__conb_1
 XFILLER_200_1205 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 Xinput12 la_data_in[43] vssd1 vssd1 vccd1 vccd1 _464_/A2 sky130_fd_sc_hd__dlymetal6s2s_1
+Xtrainable_nn_329 vssd1 vssd1 vccd1 vccd1 trainable_nn_329/HI la_data_out[81] sky130_fd_sc_hd__conb_1
 XFILLER_30_699 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
 Xinput23 la_data_in[54] vssd1 vssd1 vccd1 vccd1 _546_/A2 sky130_fd_sc_hd__clkbuf_1
 XFILLER_204_1385 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
@@ -32127,8 +32047,6 @@ XFILLER_172_961 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_117_877 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_116_365 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_102_1297 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
-Xtrainable_nn_290 vssd1 vssd1 vccd1 vccd1 trainable_nn_290/HI la_data_out[42]
-+ sky130_fd_sc_hd__conb_1
 XFILLER_176_1365 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
 XFILLER_132_825 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_89_205 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
@@ -33024,8 +32942,10 @@ XFILLER_54_1651 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
 XFILLER_30_645 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_8
 XFILLER_175_617 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_19_1793 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
+Xtrainable_nn_308 vssd1 vssd1 vccd1 vccd1 trainable_nn_308/HI la_data_out[60] sky130_fd_sc_hd__conb_1
 XFILLER_204_1353 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_106_1763 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
+Xtrainable_nn_319 vssd1 vssd1 vccd1 vccd1 trainable_nn_319/HI la_data_out[71] sky130_fd_sc_hd__conb_1
 Xinput13 la_data_in[44] vssd1 vssd1 vccd1 vccd1 _469_/B sky130_fd_sc_hd__clkbuf_1
 XFILLER_128_533 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_200_1217 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
@@ -33613,11 +33533,7 @@ XFILLER_141_1281 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
 XFILLER_11_1137 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
 XFILLER_50_1197 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
 XFILLER_116_333 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
-Xtrainable_nn_280 vssd1 vssd1 vccd1 vccd1 trainable_nn_280/HI la_data_out[32]
-+ sky130_fd_sc_hd__conb_1
 XFILLER_172_973 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
-Xtrainable_nn_291 vssd1 vssd1 vccd1 vccd1 trainable_nn_291/HI la_data_out[43]
-+ sky130_fd_sc_hd__conb_1
 XFILLER_171_461 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_117_889 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
 XFILLER_116_377 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
@@ -34513,6 +34429,7 @@ XFILLER_15_1625 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_198_1409 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_175_629 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_128_501 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
+Xtrainable_nn_309 vssd1 vssd1 vccd1 vccd1 trainable_nn_309/HI la_data_out[61] sky130_fd_sc_hd__conb_1
 XFILLER_30_679 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_168_681 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_204_1365 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
@@ -35080,14 +34997,8 @@ XFILLER_116_301 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
 XFILLER_8_981 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_11_1149 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
 XFILLER_144_643 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
-Xtrainable_nn_270 vssd1 vssd1 vccd1 vccd1 trainable_nn_270/HI io_oeb[37]
-+ sky130_fd_sc_hd__conb_1
 XFILLER_116_345 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_132_805 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
-Xtrainable_nn_281 vssd1 vssd1 vccd1 vccd1 trainable_nn_281/HI la_data_out[33]
-+ sky130_fd_sc_hd__conb_1
-Xtrainable_nn_292 vssd1 vssd1 vccd1 vccd1 trainable_nn_292/HI la_data_out[44]
-+ sky130_fd_sc_hd__conb_1
 XFILLER_171_473 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_116_389 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_132_849 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
@@ -36560,15 +36471,9 @@ XFILLER_129_685 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_69_1917 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_8_993 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_209_55 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
-Xtrainable_nn_271 vssd1 vssd1 vccd1 vccd1 trainable_nn_271/HI io_out[32]
-+ sky130_fd_sc_hd__conb_1
 XFILLER_128_195 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
 XFILLER_171_441 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
-Xtrainable_nn_282 vssd1 vssd1 vccd1 vccd1 trainable_nn_282/HI la_data_out[34]
-+ sky130_fd_sc_hd__conb_1
 XFILLER_116_357 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
-Xtrainable_nn_293 vssd1 vssd1 vccd1 vccd1 trainable_nn_293/HI la_data_out[45]
-+ sky130_fd_sc_hd__conb_1
 XFILLER_131_305 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_171_485 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_144_699 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
@@ -36954,6 +36859,7 @@ XFILLER_135_441 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
 XFILLER_205_3 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_30_53 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_87_1847 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
+Xtrainable_nn_290 vssd1 vssd1 vccd1 vccd1 trainable_nn_290/HI la_data_out[42] sky130_fd_sc_hd__conb_1
 XFILLER_163_783 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
 XFILLER_120_1197 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
 XFILLER_146_53 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
@@ -38058,13 +37964,7 @@ XFILLER_184_781 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_129_697 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_143_111 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
 XFILLER_144_645 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
-Xtrainable_nn_272 vssd1 vssd1 vccd1 vccd1 trainable_nn_272/HI io_out[33]
-+ sky130_fd_sc_hd__conb_1
-Xtrainable_nn_283 vssd1 vssd1 vccd1 vccd1 trainable_nn_283/HI la_data_out[35]
-+ sky130_fd_sc_hd__conb_1
 XFILLER_89_1399 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
-Xtrainable_nn_294 vssd1 vssd1 vccd1 vccd1 trainable_nn_294/HI la_data_out[46]
-+ sky130_fd_sc_hd__conb_1
 XFILLER_131_317 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_193_1661 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_171_497 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
@@ -38458,6 +38358,8 @@ XFILLER_108_645 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_107_111 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
 XFILLER_68_1203 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
 XFILLER_139_1905 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
+Xtrainable_nn_280 vssd1 vssd1 vccd1 vccd1 trainable_nn_280/HI la_data_out[32] sky130_fd_sc_hd__conb_1
+Xtrainable_nn_291 vssd1 vssd1 vccd1 vccd1 trainable_nn_291/HI la_data_out[43] sky130_fd_sc_hd__conb_1
 XFILLER_30_65 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_123_615 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
 XFILLER_100_3 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
@@ -39556,14 +39458,8 @@ XFILLER_201_1861 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_184_793 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_176_1315 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
 XFILLER_183_281 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
-Xtrainable_nn_273 vssd1 vssd1 vccd1 vccd1 trainable_nn_273/HI io_out[34]
-+ sky130_fd_sc_hd__conb_1
 XFILLER_128_197 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_144_657 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
-Xtrainable_nn_284 vssd1 vssd1 vccd1 vccd1 trainable_nn_284/HI la_data_out[36]
-+ sky130_fd_sc_hd__conb_1
-Xtrainable_nn_295 vssd1 vssd1 vccd1 vccd1 trainable_nn_295/HI la_data_out[47]
-+ sky130_fd_sc_hd__conb_1
 XFILLER_143_167 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
 XFILLER_131_329 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
 XFILLER_193_1673 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
@@ -39927,12 +39823,15 @@ XFILLER_5_217 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
 XFILLER_202_1477 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
 XFILLER_147_281 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_5_228 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_8
+Xtrainable_nn_270 vssd1 vssd1 vccd1 vccd1 trainable_nn_270/HI io_oeb[37] sky130_fd_sc_hd__conb_1
 XFILLER_163_741 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_5_239 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
 XFILLER_108_657 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_159_1343 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
 XFILLER_139_1917 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
+Xtrainable_nn_281 vssd1 vssd1 vccd1 vccd1 trainable_nn_281/HI la_data_out[33] sky130_fd_sc_hd__conb_1
 XFILLER_87_1849 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
+Xtrainable_nn_292 vssd1 vssd1 vccd1 vccd1 trainable_nn_292/HI la_data_out[44] sky130_fd_sc_hd__conb_1
 XFILLER_174_1819 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
 XFILLER_162_251 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
 XFILLER_163_785 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
@@ -41067,15 +40966,9 @@ XFILLER_201_1873 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_7_473 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_209_69 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_143_113 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
-Xtrainable_nn_274 vssd1 vssd1 vccd1 vccd1 trainable_nn_274/HI io_out[35]
-+ sky130_fd_sc_hd__conb_1
 XFILLER_183_293 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
-Xtrainable_nn_285 vssd1 vssd1 vccd1 vccd1 trainable_nn_285/HI la_data_out[37]
-+ sky130_fd_sc_hd__conb_1
 XFILLER_144_669 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_99_81 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
-Xtrainable_nn_296 vssd1 vssd1 vccd1 vccd1 trainable_nn_296/HI la_data_out[48]
-+ sky130_fd_sc_hd__conb_1
 XFILLER_98_701 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XTAP_701 vssd1 vccd1 sky130_fd_sc_hd__tapvpwrvgnd_1
 XTAP_712 vssd1 vccd1 sky130_fd_sc_hd__tapvpwrvgnd_1
@@ -41437,9 +41330,12 @@ XFILLER_87_1817 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_198_1371 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
 XFILLER_107_113 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_68_1205 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
+Xtrainable_nn_271 vssd1 vssd1 vccd1 vccd1 trainable_nn_271/HI io_out[32] sky130_fd_sc_hd__conb_1
 XFILLER_147_293 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_163_753 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
+Xtrainable_nn_282 vssd1 vssd1 vccd1 vccd1 trainable_nn_282/HI la_data_out[34] sky130_fd_sc_hd__conb_1
 XFILLER_108_669 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
+Xtrainable_nn_293 vssd1 vssd1 vccd1 vccd1 trainable_nn_293/HI la_data_out[45] sky130_fd_sc_hd__conb_1
 XFILLER_123_617 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_163_797 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_2_925 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_2
@@ -42601,15 +42497,9 @@ XFILLER_144_637 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
 XFILLER_7_485 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_201_1885 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_143_125 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
-Xtrainable_nn_275 vssd1 vssd1 vccd1 vccd1 trainable_nn_275/HI io_out[36]
-+ sky130_fd_sc_hd__conb_1
 XFILLER_172_979 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
 XFILLER_109_391 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
-Xtrainable_nn_286 vssd1 vssd1 vccd1 vccd1 trainable_nn_286/HI la_data_out[38]
-+ sky130_fd_sc_hd__conb_1
 XFILLER_67_1623 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
-Xtrainable_nn_297 vssd1 vssd1 vccd1 vccd1 trainable_nn_297/HI la_data_out[49]
-+ sky130_fd_sc_hd__conb_1
 XFILLER_99_93 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_143_169 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_98_713 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
@@ -42972,11 +42862,14 @@ XFILLER_108_637 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
 XFILLER_104_1889 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_194_1203 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
 XFILLER_87_1829 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
+Xtrainable_nn_272 vssd1 vssd1 vccd1 vccd1 trainable_nn_272/HI io_out[33] sky130_fd_sc_hd__conb_1
 XFILLER_107_125 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_68_1217 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_159_1345 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
+Xtrainable_nn_283 vssd1 vssd1 vccd1 vccd1 trainable_nn_283/HI la_data_out[35] sky130_fd_sc_hd__conb_1
 XFILLER_163_765 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_136_979 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
+Xtrainable_nn_294 vssd1 vssd1 vccd1 vccd1 trainable_nn_294/HI la_data_out[46] sky130_fd_sc_hd__conb_1
 XFILLER_162_253 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_107_169 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_123_629 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
@@ -44094,16 +43987,10 @@ XFILLER_116_307 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
 XFILLER_183_273 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
 XFILLER_176_1329 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_128_189 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
-Xtrainable_nn_276 vssd1 vssd1 vccd1 vccd1 trainable_nn_276/HI io_out[37]
-+ sky130_fd_sc_hd__conb_1
 XFILLER_7_497 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
 XFILLER_201_1897 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
 XFILLER_143_137 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_125_841 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
-Xtrainable_nn_287 vssd1 vssd1 vccd1 vccd1 trainable_nn_287/HI la_data_out[39]
-+ sky130_fd_sc_hd__conb_1
-Xtrainable_nn_298 vssd1 vssd1 vccd1 vccd1 trainable_nn_298/HI la_data_out[50]
-+ sky130_fd_sc_hd__conb_1
 XFILLER_158_1763 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
 XFILLER_140_811 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
 XFILLER_98_725 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
@@ -44453,10 +44340,13 @@ XFILLER_159_1313 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_147_273 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
 XFILLER_198_1373 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_120_1147 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
+Xtrainable_nn_273 vssd1 vssd1 vccd1 vccd1 trainable_nn_273/HI io_out[34] sky130_fd_sc_hd__conb_1
 XFILLER_162_221 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_107_137 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
+Xtrainable_nn_284 vssd1 vssd1 vccd1 vccd1 trainable_nn_284/HI la_data_out[36] sky130_fd_sc_hd__conb_1
 XFILLER_68_1229 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_159_1357 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
+Xtrainable_nn_295 vssd1 vssd1 vccd1 vccd1 trainable_nn_295/HI la_data_out[47] sky130_fd_sc_hd__conb_1
 XFILLER_163_777 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
 XFILLER_194_1259 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
 XFILLER_162_265 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
@@ -45550,17 +45440,12 @@ XFILLER_172_937 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_143_105 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
 XFILLER_99_51 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_4
 XFILLER_32_1595 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
-Xtrainable_nn_277 vssd1 vssd1 vccd1 vccd1 trainable_nn_277/HI irq[0] sky130_fd_sc_hd__conb_1
 XFILLER_197_1791 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
 XFILLER_171_447 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
 XFILLER_109_393 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
-Xtrainable_nn_288 vssd1 vssd1 vccd1 vccd1 trainable_nn_288/HI la_data_out[40]
-+ sky130_fd_sc_hd__conb_1
 XFILLER_67_1625 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_143_149 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_125_853 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
-Xtrainable_nn_299 vssd1 vssd1 vccd1 vccd1 trainable_nn_299/HI la_data_out[51]
-+ sky130_fd_sc_hd__conb_1
 XFILLER_28_1609 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_48_1035 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
 XFILLER_180_981 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
@@ -45940,13 +45825,16 @@ XFILLER_30_15 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_33_1189 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_194_1205 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_159_1325 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
+Xtrainable_nn_274 vssd1 vssd1 vccd1 vccd1 trainable_nn_274/HI io_out[35] sky130_fd_sc_hd__conb_1
 XFILLER_198_1385 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_190_531 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
 XFILLER_162_233 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_146_15 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_135_447 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
+Xtrainable_nn_285 vssd1 vssd1 vccd1 vccd1 trainable_nn_285/HI la_data_out[37] sky130_fd_sc_hd__conb_1
 XFILLER_200_1161 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_107_149 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
+Xtrainable_nn_296 vssd1 vssd1 vccd1 vccd1 trainable_nn_296/HI la_data_out[48] sky130_fd_sc_hd__conb_1
 XFILLER_85_1511 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
 XFILLER_123_609 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
 XFILLER_159_1369 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
@@ -47046,10 +46934,7 @@ XFILLER_109_361 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_172_949 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_125_821 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_158_1721 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
-Xtrainable_nn_278 vssd1 vssd1 vccd1 vccd1 trainable_nn_278/HI irq[1] sky130_fd_sc_hd__conb_1
 XFILLER_193_1623 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
-Xtrainable_nn_289 vssd1 vssd1 vccd1 vccd1 trainable_nn_289/HI la_data_out[41]
-+ sky130_fd_sc_hd__conb_1
 XFILLER_48_1003 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_119_1705 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_67_1637 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
@@ -47401,13 +47286,16 @@ XFILLER_175_573 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_136_949 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_120_1149 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_30_27 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
+Xtrainable_nn_275 vssd1 vssd1 vccd1 vccd1 trainable_nn_275/HI io_out[36] sky130_fd_sc_hd__conb_1
 XFILLER_194_1217 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_159_1337 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
 XFILLER_198_1397 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
+Xtrainable_nn_286 vssd1 vssd1 vccd1 vccd1 trainable_nn_286/HI la_data_out[38] sky130_fd_sc_hd__conb_1
 XFILLER_200_1173 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_162_245 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
 XFILLER_146_27 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
 XFILLER_11_1455 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
+Xtrainable_nn_297 vssd1 vssd1 vccd1 vccd1 trainable_nn_297/HI la_data_out[49] sky130_fd_sc_hd__conb_1
 XANTENNA_clkbuf_3_7_0_counter.clk_A clkbuf_3_7_0_counter.clk/A vssd1 vssd1 vccd1 vccd1
 + sky130_fd_sc_hd__diode_2
 XFILLER_89_1681 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
@@ -48506,7 +48394,6 @@ XFILLER_32_1597 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_67_1605 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_158_1733 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_125_833 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
-Xtrainable_nn_279 vssd1 vssd1 vccd1 vccd1 trainable_nn_279/HI irq[2] sky130_fd_sc_hd__conb_1
 XFILLER_171_449 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_139_1121 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XANTENNA_output170_A _920_/A vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__diode_2
@@ -48875,11 +48762,14 @@ XFILLER_198_1365 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
 XFILLER_175_585 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_15_1581 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_200_1141 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
+Xtrainable_nn_276 vssd1 vssd1 vccd1 vccd1 trainable_nn_276/HI io_out[37] sky130_fd_sc_hd__conb_1
 XFILLER_190_533 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_50_1483 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
 XFILLER_194_1229 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_135_449 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
+Xtrainable_nn_287 vssd1 vssd1 vccd1 vccd1 trainable_nn_287/HI la_data_out[39] sky130_fd_sc_hd__conb_1
 XFILLER_151_909 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
+Xtrainable_nn_298 vssd1 vssd1 vccd1 vccd1 trainable_nn_298/HI la_data_out[50] sky130_fd_sc_hd__conb_1
 XFILLER_85_1513 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_200_1185 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_144_961 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
@@ -50306,10 +50196,13 @@ XFILLER_102_1541 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_15_1593 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_30_29 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_175_597 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
+Xtrainable_nn_277 vssd1 vssd1 vccd1 vccd1 trainable_nn_277/HI irq[0] sky130_fd_sc_hd__conb_1
 XFILLER_89_1661 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_190_545 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
+Xtrainable_nn_288 vssd1 vssd1 vccd1 vccd1 trainable_nn_288/HI la_data_out[40] sky130_fd_sc_hd__conb_1
 XFILLER_146_29 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_11_1457 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
+Xtrainable_nn_299 vssd1 vssd1 vccd1 vccd1 trainable_nn_299/HI la_data_out[51] sky130_fd_sc_hd__conb_1
 XFILLER_85_1525 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_200_1197 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
 XFILLER_176_1653 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
@@ -51750,8 +51643,10 @@ XFILLER_163_727 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
 XFILLER_135_429 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_11_1425 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_102_1553 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
+Xtrainable_nn_278 vssd1 vssd1 vccd1 vccd1 trainable_nn_278/HI irq[1] sky130_fd_sc_hd__conb_1
 XFILLER_50_1485 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_176_1621 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
+Xtrainable_nn_289 vssd1 vssd1 vccd1 vccd1 trainable_nn_289/HI la_data_out[41] sky130_fd_sc_hd__conb_1
 XFILLER_89_1673 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
 XFILLER_190_557 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_116_643 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
@@ -53214,6 +53109,7 @@ XFILLER_141_1581 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_147_279 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__fill_1
 XFILLER_190_525 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
 XFILLER_11_1437 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
+Xtrainable_nn_279 vssd1 vssd1 vccd1 vccd1 trainable_nn_279/HI irq[2] sky130_fd_sc_hd__conb_1
 XFILLER_102_1565 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_50_1497 vssd1 vccd1 vccd1 vssd1 sky130_ef_sc_hd__decap_12
 XFILLER_85_1505 vssd1 vssd1 vccd1 vccd1 sky130_fd_sc_hd__decap_6
