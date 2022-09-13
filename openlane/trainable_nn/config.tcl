@@ -37,12 +37,12 @@ set ::env(CLOCK_NET) "i_nn.clk"
 set ::env(CLOCK_PERIOD) "100"
 
 set ::env(FP_SIZING) absolute
-set ::env(DIE_AREA) "0 0 2200 2800"
+set ::env(DIE_AREA) "0 0 1800 2400"
 
 set ::env(FP_PIN_ORDER_CFG) $script_dir/pin_order.cfg
 
 set ::env(PL_BASIC_PLACEMENT) 0
-set ::env(PL_TARGET_DENSITY) 0.3
+set ::env(PL_TARGET_DENSITY) 0.25
 
 # Maximum layer used for routing is metal 4.
 # This is because this macro will be inserted in a top level (user_project_wrapper) 
