@@ -1,52 +1,66 @@
-// SPDX-License-Identifier: MIT
-// SPDX-FileCopyrightText: 2022 Tamas Hubai
+// SPDX-FileCopyrightText: 2020 Efabless Corporation
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//      http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+// SPDX-License-Identifier: Apache-2.0
 
 `default_nettype none
 
-// numbers are represented as fixed-point fractions
-// with an integral part of INT_WIDTH bits
-// and a fractional part of FRAC_WIDTH bits
-// (64 bits are an overkill here, but simulations were run on a 64-bit platform)
-`define INT_WIDTH 40
-`define FRAC_WIDTH 24
-`define NUM_WIDTH (`INT_WIDTH + `FRAC_WIDTH)
+`ifndef __GLOBAL_DEFINE_H
+// Global parameters
+`define __GLOBAL_DEFINE_H
 
-// multiplication is the main bottleneck in the circuit complexity
-// so we recude integer & fractional widths for multiplications
-// (this didn't significantly affect learning speed in our tests)
+`define MPRJ_IO_PADS_1 19	/* number of user GPIO pads on user1 side */
+`define MPRJ_IO_PADS_2 19	/* number of user GPIO pads on user2 side */
+`define MPRJ_IO_PADS (`MPRJ_IO_PADS_1 + `MPRJ_IO_PADS_2)
 
-`define MUL_INT_WIDTH 6
-`define PRE_MUL_FRAC_WIDTH 12
-`define POST_MUL_FRAC_WIDTH 16
+`define MPRJ_PWR_PADS_1 2	/* vdda1, vccd1 enable/disable control */
+`define MPRJ_PWR_PADS_2 2	/* vdda2, vccd2 enable/disable control */
+`define MPRJ_PWR_PADS (`MPRJ_PWR_PADS_1 + `MPRJ_PWR_PADS_2)
 
-// number of neurons in input, hidden 1, hidden 2 & output layers
-`define INPUT_SIZE 2
-`define HIDDEN1_SIZE 2
-`define HIDDEN2_SIZE 2
-`define OUTPUT_SIZE 2
+// Analog pads are only used by the "caravan" module and associated
+// modules such as user_analog_project_wrapper and chip_io_alt.
 
-// bits required to describe the sizes above
-`define INDEX_WIDTH 10
+`define ANALOG_PADS_1 5
+`define ANALOG_PADS_2 6
 
-// power of 1/2 used an the slope of leaky ReLU's negative part
-`define LEAK_SHIFT 7
+`define ANALOG_PADS (`ANALOG_PADS_1 + `ANALOG_PADS_2)
 
-// power of 1/2 used as the learning rate
-`define LEARN_SHIFT 7
+// Size of soc_mem_synth
 
-// macros for passing bus arrays to modules
-`define PACK_ARRAY_INTERNAL(WIDTH,LEN,SRC,DEST,VAR) \
-    generate genvar VAR; \
-    for (VAR=0; VAR<(LEN); VAR=VAR+1) begin \
-        assign DEST[((WIDTH)*VAR+((WIDTH)-1)):((WIDTH)*VAR)] = SRC[VAR][((WIDTH)-1):0]; \
-    end \
-    endgenerate
-`define PACK_ARRAY(WIDTH,LEN,SRC,DEST) `PACK_ARRAY_INTERNAL(WIDTH,LEN,SRC,DEST,pa_``SRC)
-`define UNPACK_ARRAY_INTERNAL(WIDTH,LEN,DEST,SRC,VAR) \
-    generate genvar VAR; \
-    for (VAR=0; VAR<(LEN); VAR=VAR+1) begin \
-        assign DEST[VAR][((WIDTH)-1):0] = SRC[((WIDTH)*VAR+(WIDTH-1)):((WIDTH)*VAR)]; \
-    end \
-    endgenerate
-`define UNPACK_ARRAY(WIDTH,LEN,SRC,DEST) `UNPACK_ARRAY_INTERNAL(WIDTH,LEN,SRC,DEST,ua_``SRC)
+// Type and size of soc_mem
+// `define USE_OPENRAM
+`define USE_CUSTOM_DFFRAM
+// don't change the following without double checking addr widths
+`define MEM_WORDS 256
 
+// Number of columns in the custom memory; takes one of three values:
+// 1 column : 1 KB, 2 column: 2 KB, 4 column: 4KB
+`define DFFRAM_WSIZE 4
+`define DFFRAM_USE_LATCH 0
+
+// not really parameterized but just to easily keep track of the number
+// of ram_block across different modules
+`define RAM_BLOCKS 1
+
+// Clock divisor default value
+`define CLK_DIV 3'b010
+
+// GPIO control default mode and enable for most I/Os
+// Most I/Os set to be user input pins on startup.
+// NOTE:  To be modified, with GPIOs 5 to 35 being set from a build-time-
+// programmable block.
+`define MGMT_INIT 1'b0
+`define OENB_INIT 1'b0
+`define DM_INIT 3'b001
+
+`endif // __GLOBAL_DEFINE_H
