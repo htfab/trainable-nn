@@ -1,12 +1,13 @@
-# Caravel User Project
+# Trainable Neural Network
 
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0) [![UPRJ_CI](https://github.com/efabless/caravel_project_example/actions/workflows/user_project_ci.yml/badge.svg)](https://github.com/efabless/caravel_project_example/actions/workflows/user_project_ci.yml) [![Caravel Build](https://github.com/efabless/caravel_project_example/actions/workflows/caravel_build.yml/badge.svg)](https://github.com/efabless/caravel_project_example/actions/workflows/caravel_build.yml)
+![Overview diagram](docs/overview.jpg)
 
-| :exclamation: Important Note            |
-|-----------------------------------------|
+Implements a simple neural network that supports on-chip training in addition to inference.
+The two hidden layers use leaky ReLU as their activation function while the output layer uses a
+rough approximation of softmax.
 
-## Please fill in your project documentation in this README.md file 
+Unlike usual neural network implementations we use fixed-point saturation arithmetic and
+each neuron and synapse is represented as an individual instance.
+Inputs, outputs and weights, as well as forward and backward propagation can be managed
+through the wishbone bus.
 
-Refer to [README](docs/source/index.rst#section-quickstart) for a quickstart of how to use caravel_user_project
-
-Refer to [README](docs/source/index.rst) for this sample project documentation. 
