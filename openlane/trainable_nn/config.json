@@ -12,11 +12,11 @@
         "dir::../../verilog/rtl/interface.v",
         "dir::../../verilog/rtl/trainable_nn.v"
     ],
-    "CLOCK_PERIOD": 200,
+    "CLOCK_PERIOD": 100,
     "CLOCK_PORT": "wb_clk_i",
     "CLOCK_NET": "i_nn.clk",
     "FP_SIZING": "absolute",
-    "DIE_AREA": "0 0 1500 2000",
+    "DIE_AREA": "0 0 600 800",
     "FP_PIN_ORDER_CFG": "dir::pin_order.cfg",
     "PL_BASIC_PLACEMENT": 0,
     "PL_TARGET_DENSITY": 0.45,

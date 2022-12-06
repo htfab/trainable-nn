@@ -20,10 +20,10 @@
 `define POST_MUL_FRAC_WIDTH 16
 
 // number of neurons in input, hidden 1, hidden 2 & output layers
-`define INPUT_SIZE 2
-`define HIDDEN1_SIZE 2
-`define HIDDEN2_SIZE 2
-`define OUTPUT_SIZE 2
+`define INPUT_SIZE 1
+`define HIDDEN1_SIZE 1
+`define HIDDEN2_SIZE 1
+`define OUTPUT_SIZE 1
 
 // bits required to describe the sizes above
 `define INDEX_WIDTH 10
