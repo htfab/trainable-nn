@@ -1,5 +1,83 @@
 Found 3126 unannotated nets.
- vssio_2
+ vdda
+ gpio_control_bidir_2\[2\]/_056_
+ gpio_control_bidir_2\[2\]/_055_
+ gpio_control_bidir_2\[2\]/_054_
+ gpio_control_bidir_2\[2\]/_053_
+ gpio_control_bidir_2\[2\]/_052_
+ gpio_control_bidir_2\[2\]/_051_
+ gpio_control_bidir_2\[2\]/_050_
+ gpio_control_bidir_2\[2\]/_049_
+ gpio_control_bidir_2\[2\]/_048_
+ gpio_control_bidir_2\[2\]/_047_
+ gpio_control_bidir_2\[2\]/_046_
+ gpio_control_bidir_2\[2\]/_057_
+ gpio_control_bidir_2\[2\]/gpio_logic_high/gpio_logic1
+ gpio_control_in_1\[0\]/_056_
+ gpio_control_in_1\[0\]/_055_
+ gpio_control_in_1\[0\]/_054_
+ gpio_control_in_1\[0\]/_053_
+ gpio_control_in_1\[0\]/_052_
+ gpio_control_in_1\[0\]/_051_
+ gpio_control_in_1\[0\]/_050_
+ gpio_control_in_1\[0\]/_049_
+ gpio_control_in_1\[0\]/_048_
+ gpio_control_in_1\[0\]/_047_
+ gpio_control_in_1\[0\]/_046_
+ gpio_control_in_1\[0\]/_057_
+ gpio_control_in_1\[0\]/gpio_logic_high/gpio_logic1
+ gpio_control_in_1\[10\]/_056_
+ gpio_control_in_1\[10\]/_055_
+ gpio_control_in_1\[10\]/_054_
+ gpio_control_in_1\[10\]/_053_
+ gpio_control_in_1\[10\]/_052_
+ gpio_control_in_1\[10\]/_051_
+ gpio_control_in_1\[10\]/_050_
+ gpio_control_in_1\[10\]/_049_
+ gpio_control_in_1\[10\]/_048_
+ gpio_control_in_1\[10\]/_047_
+ gpio_control_in_1\[10\]/_046_
+ gpio_control_in_1\[10\]/_057_
+ gpio_control_in_1\[10\]/gpio_logic_high/gpio_logic1
+ gpio_control_in_1\[1\]/_056_
+ gpio_control_in_1\[1\]/_055_
+ gpio_control_in_1\[1\]/_054_
+ gpio_control_in_1\[1\]/_053_
+ gpio_control_in_1\[1\]/_052_
+ gpio_control_in_1\[1\]/_051_
+ gpio_control_in_1\[1\]/_050_
+ gpio_control_in_1\[1\]/_049_
+ gpio_control_in_1\[1\]/_048_
+ gpio_control_in_1\[1\]/_047_
+ gpio_control_in_1\[1\]/_046_
+ gpio_control_in_1\[1\]/_057_
+ gpio_control_in_1\[1\]/gpio_logic_high/gpio_logic1
+ gpio_control_in_1\[2\]/_056_
+ gpio_control_in_1\[2\]/_055_
+ gpio_control_in_1\[2\]/_054_
+ gpio_control_in_1\[2\]/_053_
+ gpio_control_in_1\[2\]/_052_
+ gpio_control_in_1\[2\]/_051_
+ gpio_control_in_1\[2\]/_050_
+ gpio_control_in_1\[2\]/_049_
+ gpio_control_in_1\[2\]/_048_
+ gpio_control_in_1\[2\]/_047_
+ gpio_control_in_1\[2\]/_046_
+ gpio_control_in_1\[2\]/_057_
+ gpio_control_in_1\[2\]/gpio_logic_high/gpio_logic1
+ gpio_control_in_1\[3\]/_056_
+ gpio_control_in_1\[3\]/_055_
+ gpio_control_in_1\[3\]/_054_
+ gpio_control_in_1\[3\]/_053_
+ gpio_control_in_1\[3\]/_052_
+ gpio_control_in_1\[3\]/_051_
+ gpio_control_in_1\[3\]/_050_
+ gpio_control_in_1\[3\]/_049_
+ gpio_control_in_1\[3\]/_048_
+ gpio_control_in_1\[3\]/_047_
+ gpio_control_in_1\[3\]/_046_
+ gpio_control_in_1\[3\]/_057_
+ gpio_control_in_1\[3\]/gpio_logic_high/gpio_logic1
  gpio_control_in_1\[4\]/_056_
  gpio_control_in_1\[4\]/_055_
  gpio_control_in_1\[4\]/_054_
@@ -40,6 +118,58 @@ Found 3126 unannotated nets.
  gpio_control_in_1\[6\]/_057_
  gpio_control_in_1\[6\]/gpio_logic_high/gpio_logic1
  gpio_control_in_1\[7\]/_056_
+ gpio_control_bidir_1\[0\]/_056_
+ gpio_control_bidir_1\[0\]/_055_
+ gpio_control_bidir_1\[0\]/_054_
+ gpio_control_bidir_1\[0\]/_053_
+ gpio_control_bidir_1\[0\]/_052_
+ gpio_control_bidir_1\[0\]/_051_
+ gpio_control_bidir_1\[0\]/_050_
+ gpio_control_bidir_1\[0\]/_049_
+ gpio_control_bidir_1\[0\]/_048_
+ gpio_control_bidir_1\[0\]/_047_
+ gpio_control_bidir_1\[0\]/_046_
+ gpio_control_bidir_1\[0\]/_057_
+ gpio_control_bidir_1\[0\]/gpio_logic_high/gpio_logic1
+ gpio_control_bidir_1\[1\]/_056_
+ gpio_control_bidir_1\[1\]/_055_
+ gpio_control_bidir_1\[1\]/_054_
+ gpio_control_bidir_1\[1\]/_053_
+ gpio_control_bidir_1\[1\]/_052_
+ gpio_control_bidir_1\[1\]/_051_
+ gpio_control_bidir_1\[1\]/_050_
+ gpio_control_bidir_1\[1\]/_049_
+ gpio_control_bidir_1\[1\]/_048_
+ gpio_control_bidir_1\[1\]/_047_
+ gpio_control_bidir_1\[1\]/_046_
+ gpio_control_bidir_1\[1\]/_057_
+ gpio_control_bidir_1\[1\]/gpio_logic_high/gpio_logic1
+ gpio_control_bidir_2\[0\]/_056_
+ gpio_control_bidir_2\[0\]/_055_
+ gpio_control_bidir_2\[0\]/_054_
+ gpio_control_bidir_2\[0\]/_053_
+ gpio_control_bidir_2\[0\]/_052_
+ gpio_control_bidir_2\[0\]/_051_
+ gpio_control_bidir_2\[0\]/_050_
+ gpio_control_bidir_2\[0\]/_049_
+ gpio_control_bidir_2\[0\]/_048_
+ gpio_control_bidir_2\[0\]/_047_
+ gpio_control_bidir_2\[0\]/_046_
+ gpio_control_bidir_2\[0\]/_057_
+ gpio_control_bidir_2\[0\]/gpio_logic_high/gpio_logic1
+ gpio_control_bidir_2\[1\]/_056_
+ gpio_control_bidir_2\[1\]/_055_
+ gpio_control_bidir_2\[1\]/_054_
+ gpio_control_bidir_2\[1\]/_053_
+ gpio_control_bidir_2\[1\]/_052_
+ gpio_control_bidir_2\[1\]/_051_
+ gpio_control_bidir_2\[1\]/_050_
+ gpio_control_bidir_2\[1\]/_049_
+ gpio_control_bidir_2\[1\]/_048_
+ gpio_control_bidir_2\[1\]/_047_
+ gpio_control_bidir_2\[1\]/_046_
+ gpio_control_bidir_2\[1\]/_057_
+ gpio_control_bidir_2\[1\]/gpio_logic_high/gpio_logic1
  gpio_control_in_1\[7\]/_055_
  gpio_control_in_1\[7\]/_054_
  gpio_control_in_1\[7\]/_053_
@@ -234,333 +364,6 @@ Found 3126 unannotated nets.
  gpio_control_in_2\[14\]/_046_
  gpio_control_in_2\[14\]/_057_
  gpio_control_in_2\[14\]/gpio_logic_high/gpio_logic1
- padframe/mprj_io[32]
- padframe/mprj_io[29]
- padframe/mprj_io[31]
- padframe/mprj_io[15]
- padframe/mprj_io[16]
- padframe/mprj_io[1]
- padframe/mprj_io[2]
- padframe/mprj_io[3]
- padframe/mprj_io[4]
- padframe/mprj_io[5]
- padframe/mprj_io[6]
- padframe/mprj_io[7]
- mprj/mprj/la_data_out[95]
- mprj/mprj/la_data_out[94]
- mprj/mprj/la_data_out[93]
- mprj/mprj/la_data_out[92]
- mprj/mprj/la_data_out[91]
- mprj/mprj/la_data_out[90]
- mprj/mprj/la_data_out[89]
- mprj/mprj/la_data_out[88]
- mprj/mprj/la_data_out[87]
- mprj/mprj/la_data_out[86]
- mprj/mprj/la_data_out[85]
- mprj/mprj/la_data_out[84]
- mprj/mprj/la_data_out[83]
- mprj/mprj/la_data_out[82]
- mprj/mprj/la_data_out[81]
- mprj/mprj/la_data_out[80]
- mprj/mprj/la_data_out[79]
- mprj/mprj/la_data_out[78]
- mprj/mprj/la_data_out[77]
- mprj/mprj/la_data_out[76]
- mprj/mprj/la_data_out[75]
- mprj/mprj/la_data_out[74]
- mprj/mprj/la_data_out[73]
- mprj/mprj/la_data_out[72]
- mprj/mprj/la_data_out[71]
- mprj/mprj/la_data_out[70]
- mprj/mprj/la_data_out[69]
- mprj/mprj/la_data_out[68]
- mprj/mprj/la_data_out[67]
- mprj/mprj/la_data_out[66]
- mprj/mprj/la_data_out[65]
- mprj/mprj/la_data_out[64]
- mprj/mprj/la_data_out[63]
- mprj/mprj/la_data_out[62]
- mprj/mprj/la_data_out[61]
- mprj/mprj/la_data_out[60]
- mprj/mprj/la_data_out[59]
- mprj/mprj/la_data_out[58]
- mprj/mprj/la_data_out[57]
- mprj/mprj/la_data_out[56]
- mprj/mprj/la_data_out[55]
- mprj/mprj/la_data_out[54]
- mprj/mprj/la_data_out[53]
- mprj/mprj/la_data_out[52]
- mprj/mprj/la_data_out[51]
- mprj/mprj/la_data_out[50]
- mprj/mprj/la_data_out[49]
- mprj/mprj/la_data_out[48]
- mprj/mprj/la_data_out[47]
- mprj/mprj/la_data_out[46]
- mprj/mprj/la_data_out[45]
- mprj/mprj/la_data_out[44]
- mprj/mprj/la_data_out[43]
- mprj/mprj/la_data_out[42]
- mprj/mprj/la_data_out[41]
- mprj/mprj/la_data_out[40]
- mprj/mprj/la_data_out[39]
- mprj/mprj/la_data_out[38]
- mprj/mprj/la_data_out[37]
- mprj/mprj/la_data_out[36]
- mprj/mprj/la_data_out[35]
- mprj/mprj/la_data_out[34]
- mprj/mprj/la_data_out[33]
- mprj/mprj/la_data_out[32]
- mprj/mprj/wbs_dat_o[31]
- mprj/mprj/wbs_dat_o[30]
- mprj/mprj/wbs_dat_o[29]
- mprj/mprj/wbs_dat_o[28]
- mprj/mprj/wbs_dat_o[27]
- mprj/mprj/wbs_dat_o[26]
- mprj/mprj/wbs_dat_o[25]
- mprj/mprj/wbs_dat_o[24]
- mprj/mprj/wbs_dat_o[23]
- mprj/mprj/wbs_dat_o[22]
- mprj/mprj/wbs_dat_o[21]
- mprj/mprj/wbs_dat_o[20]
- mprj/mprj/wbs_dat_o[19]
- mprj/mprj/wbs_dat_o[18]
- mprj/mprj/wbs_dat_o[17]
- mprj/mprj/wbs_dat_o[16]
- mprj/mprj/wbs_dat_o[15]
- mprj/mprj/wbs_dat_o[14]
- mprj/mprj/wbs_dat_o[13]
- mprj/mprj/wbs_dat_o[12]
- mprj/mprj/wbs_dat_o[11]
- mprj/mprj/wbs_dat_o[10]
- mprj/mprj/wbs_dat_o[9]
- mprj/mprj/wbs_dat_o[8]
- mprj/mprj/wbs_dat_o[7]
- mprj/mprj/wbs_dat_o[6]
- mprj/mprj/wbs_dat_o[5]
- mprj/mprj/wbs_dat_o[4]
- mprj/mprj/wbs_dat_o[3]
- mprj/mprj/wbs_dat_o[2]
- mprj/mprj/wbs_dat_o[1]
- mprj/mprj/wbs_dat_o[0]
- padframe/vddio_pad
- padframe/mprj_pads.analog_b
- padframe/constant_value_inst\[0\]/one
- padframe/constant_value_inst\[1\]/zero
- padframe/constant_value_inst\[1\]/one_unbuf
- padframe/constant_value_inst\[4\]/one
- padframe/mprj_pads.loop0_io\[10\]
- padframe/mprj_pads.io_in\[15\]
- padframe/mprj_pads.loop1_io\[17\]
- padframe/mprj_pads.analog_noesd_io\[10\]
- padframe/mprj_pads.io_in\[18\]
- padframe/mprj_pads.loop0_io\[4\]
- padframe/mprj_pads.loop0_io\[5\]
- padframe/mprj_pads.loop1_io\[6\]
- padframe/mprj_pads.no_connect_1b\[6\]
- padframe/mprj_pads.loop1_io\[7\]
- padframe/mprj_pads.analog_noesd_io\[0\]
- padframe/mprj_pads.loop0_io\[30\]
- padframe/mprj_pads.io_in\[35\]
- padframe/mprj_pads.io_in_3v3\[37\]
- padframe/mprj_pads.io_in_3v3\[20\]
- padframe/mprj_pads.loop0_io\[27\]
- rstb_level/X
- sigbuf/buf_out\[0\]
- sigbuf/buf_out\[100\]
- sigbuf/buf_in\[102\]
- sigbuf/buf_out\[102\]
- sigbuf/buf_in\[104\]
- sigbuf/buf_out\[104\]
- sigbuf/buf_in\[106\]
- sigbuf/buf_in\[107\]
- sigbuf/buf_out\[107\]
- sigbuf/buf_in\[109\]
- sigbuf/buf_in\[110\]
- sigbuf/buf_in\[11\]
- sigbuf/buf_out\[110\]
- sigbuf/buf_in\[112\]
- sigbuf/buf_in\[113\]
- sigbuf/buf_out\[113\]
- sigbuf/buf_in\[115\]
- sigbuf/buf_in\[116\]
- sigbuf/buf_in\[117\]
- sigbuf/buf_out\[117\]
- sigbuf/buf_in\[119\]
- sigbuf/buf_in\[120\]
- sigbuf/buf_in\[12\]
- sigbuf/buf_in\[121\]
- sigbuf/buf_in\[122\]
- sigbuf/buf_in\[123\]
- sigbuf/buf_out\[123\]
- sigbuf/buf_in\[125\]
- sigbuf/buf_in\[126\]
- sigbuf/buf_in\[127\]
- sigbuf/buf_in\[128\]
- sigbuf/buf_in\[129\]
- sigbuf/buf_out\[129\]
- sigbuf/buf_out\[12\]
- sigbuf/buf_in\[131\]
- sigbuf/buf_in\[132\]
- sigbuf/buf_in\[133\]
- sigbuf/buf_in\[134\]
- sigbuf/buf_in\[135\]
- sigbuf/buf_out\[135\]
- sigbuf/buf_in\[137\]
- sigbuf/buf_in\[138\]
- sigbuf/buf_in\[139\]
- sigbuf/buf_in\[140\]
- sigbuf/buf_in\[14\]
- sigbuf/buf_out\[140\]
- sigbuf/buf_in\[142\]
- sigbuf/buf_in\[143\]
- sigbuf/buf_in\[144\]
- sigbuf/buf_in\[145\]
- sigbuf/buf_out\[145\]
- sigbuf/buf_in\[147\]
- sigbuf/buf_in\[148\]
- sigbuf/buf_in\[149\]
- sigbuf/buf_out\[149\]
- sigbuf/buf_in\[15\]
- sigbuf/buf_in\[151\]
- sigbuf/buf_in\[152\]
- sigbuf/buf_in\[153\]
- sigbuf/buf_out\[153\]
- sigbuf/buf_in\[155\]
- sigbuf/buf_in\[156\]
- sigbuf/buf_in\[157\]
- sigbuf/buf_out\[157\]
- sigbuf/buf_in\[159\]
- sigbuf/buf_in\[160\]
- sigbuf/buf_out\[15\]
- sigbuf/buf_in\[161\]
- sigbuf/buf_out\[161\]
- sigbuf/buf_in\[163\]
- sigbuf/buf_in\[164\]
- sigbuf/buf_in\[165\]
- sigbuf/buf_out\[165\]
- sigbuf/buf_in\[167\]
- sigbuf/buf_in\[168\]
- sigbuf/buf_in\[169\]
- sigbuf/buf_out\[169\]
- sigbuf/buf_in\[17\]
- sigbuf/buf_in\[171\]
- sigbuf/buf_in\[172\]
- sigbuf/buf_out\[172\]
- sigbuf/buf_in\[174\]
- sigbuf/buf_in\[175\]
- sigbuf/buf_out\[175\]
- sigbuf/buf_in\[177\]
- sigbuf/buf_in\[178\]
- sigbuf/buf_out\[178\]
- sigbuf/buf_in\[180\]
- sigbuf/buf_in\[18\]
- sigbuf/buf_in\[181\]
- sigbuf/buf_out\[181\]
- sigbuf/buf_in\[183\]
- sigbuf/buf_out\[183\]
- sigbuf/buf_in\[185\]
- sigbuf/buf_out\[185\]
- sigbuf/buf_in\[187\]
- sigbuf/buf_out\[187\]
- sigbuf/buf_in\[189\]
- sigbuf/buf_out\[189\]
- sigbuf/buf_out\[18\]
- sigbuf/buf_in\[191\]
- sigbuf/buf_out\[191\]
- sigbuf/buf_in\[193\]
- sigbuf/buf_out\[193\]
- sigbuf/buf_in\[195\]
- sigbuf/buf_out\[195\]
- sigbuf/buf_in\[20\]
- sigbuf/buf_out\[1\]
- sigbuf/buf_in\[21\]
- sigbuf/buf_in\[22\]
- sigbuf/buf_out\[22\]
- sigbuf/buf_in\[24\]
- sigbuf/buf_in\[25\]
- sigbuf/buf_in\[26\]
- sigbuf/buf_in\[27\]
- sigbuf/buf_in\[28\]
- sigbuf/buf_out\[28\]
- sigbuf/buf_in\[30\]
- sigbuf/buf_out\[2\]
- sigbuf/buf_in\[31\]
- sigbuf/buf_in\[32\]
- sigbuf/buf_in\[33\]
- sigbuf/buf_in\[34\]
- sigbuf/buf_out\[34\]
- sigbuf/buf_in\[36\]
- sigbuf/buf_in\[37\]
- sigbuf/buf_in\[38\]
- sigbuf/buf_in\[39\]
- sigbuf/buf_in\[40\]
- sigbuf/buf_out\[3\]
- sigbuf/buf_out\[40\]
- sigbuf/buf_in\[42\]
- sigbuf/buf_in\[43\]
- sigbuf/buf_in\[44\]
- sigbuf/buf_in\[45\]
- sigbuf/buf_out\[45\]
- sigbuf/buf_in\[47\]
- sigbuf/buf_in\[48\]
- sigbuf/buf_in\[49\]
- sigbuf/buf_in\[50\]
- sigbuf/buf_out\[4\]
- sigbuf/buf_out\[50\]
- sigbuf/buf_in\[52\]
- sigbuf/buf_in\[53\]
- sigbuf/buf_in\[54\]
- sigbuf/buf_out\[54\]
- sigbuf/buf_in\[56\]
- sigbuf/buf_in\[57\]
- sigbuf/buf_in\[58\]
- sigbuf/buf_out\[58\]
- sigbuf/buf_in\[60\]
- sigbuf/buf_out\[5\]
- sigbuf/buf_in\[61\]
- sigbuf/buf_in\[62\]
- sigbuf/buf_out\[62\]
- sigbuf/buf_in\[64\]
- sigbuf/buf_in\[65\]
- sigbuf/buf_in\[66\]
- sigbuf/buf_out\[66\]
- sigbuf/buf_in\[68\]
- sigbuf/buf_in\[69\]
- sigbuf/buf_in\[70\]
- sigbuf/buf_in\[7\]
- sigbuf/buf_out\[70\]
- sigbuf/buf_in\[72\]
- sigbuf/buf_in\[73\]
- sigbuf/buf_in\[74\]
- sigbuf/buf_out\[74\]
- sigbuf/buf_in\[76\]
- sigbuf/buf_in\[77\]
- sigbuf/buf_out\[77\]
- sigbuf/buf_in\[79\]
- sigbuf/buf_in\[80\]
- sigbuf/buf_out\[7\]
- sigbuf/buf_out\[80\]
- sigbuf/buf_in\[82\]
- sigbuf/buf_in\[83\]
- sigbuf/buf_out\[83\]
- sigbuf/buf_in\[85\]
- sigbuf/buf_in\[86\]
- sigbuf/buf_out\[86\]
- sigbuf/buf_in\[88\]
- sigbuf/buf_out\[88\]
- sigbuf/buf_in\[90\]
- sigbuf/buf_in\[9\]
- sigbuf/buf_out\[90\]
- sigbuf/buf_in\[92\]
- sigbuf/buf_out\[92\]
- sigbuf/buf_in\[94\]
- sigbuf/buf_out\[94\]
- sigbuf/buf_out\[95\]
- sigbuf/buf_out\[96\]
- sigbuf/buf_out\[97\]
- sigbuf/buf_out\[98\]
- sigbuf/buf_out\[99\]
- sigbuf/buf_out\[9\]
  gpio_control_in_2\[15\]/_056_
  gpio_control_in_2\[15\]/_055_
  gpio_control_in_2\[15\]/_054_
@@ -1679,51 +1482,131 @@ Found 3126 unannotated nets.
  gpio_defaults_block_9/gpio_defaults_low\[8\]
  gpio_defaults_block_9/gpio_defaults_high\[9\]
  gpio_defaults_block_9/gpio_defaults_low\[9\]
- padframe/flash_clk
+ sigbuf/buf_out\[86\]
  padframe/mprj_analog_io[27]
- padframe/mprj_analog_io[7]
- padframe/mprj_analog_io[5]
- padframe/flash_io0
- padframe/flash_io0_di_core
- padframe/clock_core
- padframe/gpio_in_core
- padframe/mprj_analog_io[24]
- padframe/flash_io1_di_core
- padframe/flash_io1
- padframe/mprj_analog_io[6]
- padframe/mprj_analog_io[25]
- padframe/mprj_analog_io[26]
+ sigbuf/buf_in\[86\]
  padframe/mprj_analog_io[28]
+ padframe/flash_io0_di_core
+ padframe/flash_io0
+ padframe/mprj_analog_io[6]
+ padframe/mprj_analog_io[5]
+ padframe/clock_core
+ padframe/flash_clk
+ padframe/gpio_in_core
+ padframe/flash_io1
+ padframe/flash_io1_di_core
+ padframe/mprj_analog_io[26]
+ padframe/mprj_analog_io[24]
+ padframe/mprj_analog_io[25]
+ mprj_io[30]
+ vccd
+ vdda1
+ mprj_io[29]
+ vssa
+ mprj_io[28]
+ mprj_io[32]
+ vssio_2
+ mprj_io[27]
+ mprj_io[26]
+ mprj_io[25]
+ mprj_io[24]
+ mprj_io[23]
+ mprj_io[22]
+ mprj_io[21]
+ mprj_io[20]
+ mprj_io[19]
+ mprj_io[18]
+ mprj_io[17]
+ mprj_io[16]
+ vddio
+ vdda1_2
+ vssio
+ vddio_2
+ mprj_io[35]
+ mprj_io[34]
+ vccd2
+ mprj_io[15]
+ mprj_io[14]
+ mprj_io[13]
+ mprj_io[12]
+ mprj_io[11]
+ mprj_io[10]
+ mprj_io[9]
+ mprj_io[8]
+ mprj_io[7]
+ mprj_io[6]
+ mprj_io[5]
+ mprj_io[4]
+ mprj_io[3]
+ mprj_io[2]
+ mprj_io[1]
+ mprj_io[0]
+ resetb
+ vssa1
+ vssa2
+ vdda2
+ vssd1
+ vssa1_2
+ clock
+ vccd1
+ mprj_io[31]
+ mprj_io[33]
+ mprj_io[36]
+ mprj_io[37]
+ vssd2
+ vssd
+ gpio
+ padframe/mprj_analog_io[7]
  padframe/mprj_analog_io[8]
  padframe/mprj_analog_io[12]
+ padframe/mprj_analog_io[11]
  padframe/mprj_analog_io[10]
  padframe/mprj_analog_io[9]
  padframe/mprj_analog_io[14]
- padframe/mprj_analog_io[13]
  padframe/mprj_analog_io[15]
  padframe/mprj_analog_io[16]
- padframe/mprj_analog_io[17]
  padframe/mprj_analog_io[19]
  padframe/mprj_analog_io[20]
  padframe/mprj_analog_io[21]
- padframe/mprj_io[28]
+ sigbuf/buf_in\[88\]
+ padframe/mprj_analog_io[22]
+ sigbuf/buf_in\[145\]
  padframe/gpio
+ sigbuf/buf_in\[144\]
  padframe/mprj_io[34]
- padframe/flash_csb
+ sigbuf/buf_out\[140\]
+ sigbuf/buf_in\[14\]
+ sigbuf/buf_in\[160\]
+ padframe/mprj_analog_io[17]
  padframe/mprj_analog_io[18]
- padframe/mprj_io[8]
- padframe/mprj_io[10]
- padframe/mprj_io[21]
+ padframe/flash_csb
+ padframe/mprj_io[12]
+ padframe/mprj_io[20]
  padframe/mprj_io[22]
- padframe/clock
+ sigbuf/buf_in\[62\]
+ padframe/mprj_io[1]
+ padframe/mprj_io[7]
+ sigbuf/buf_in\[149\]
+ padframe/mprj_io[5]
+ sigbuf/buf_in\[90\]
+ padframe/mprj_io[4]
+ padframe/mprj_io[23]
  padframe/mprj_io[25]
- padframe/mprj_io[17]
- padframe/mprj_io[0]
+ sigbuf/buf_in\[147\]
+ sigbuf/buf_in\[137\]
+ padframe/mprj_analog_io[23]
+ sigbuf/buf_in\[140\]
+ sigbuf/buf_in\[143\]
+ sigbuf/buf_out\[135\]
  padframe/mprj_io[9]
- padframe/mprj_io[11]
+ sigbuf/buf_in\[139\]
  mprj/mprj/wbs_ack_o
- padframe/mprj_io[33]
- padframe/mprj_analog_io[1]
+ padframe/mprj_io[10]
+ sigbuf/buf_in\[142\]
+ sigbuf/buf_out\[145\]
+ padframe/mprj_analog_io[2]
+ padframe/mprj_io[8]
+ sigbuf/buf_out\[149\]
  mgmt_buffers/mprj2_logic_high_inst/HI
  mgmt_buffers/mprj_logic_high_inst/HI[462]
  mgmt_buffers/mprj_logic_high_inst/HI[461]
@@ -1739,12 +1622,12 @@ Found 3126 unannotated nets.
  mgmt_buffers/mprj_logic_high_inst/HI[451]
  mgmt_buffers/mprj_logic_high_inst/HI[450]
  mgmt_buffers/mprj_logic_high_inst/HI[449]
+ padframe/mprj_io[24]
  mgmt_buffers/mprj_logic_high_inst/HI[448]
  mgmt_buffers/mprj_logic_high_inst/HI[447]
  mgmt_buffers/mprj_logic_high_inst/HI[446]
  mgmt_buffers/mprj_logic_high_inst/HI[445]
  mgmt_buffers/mprj_logic_high_inst/HI[444]
- padframe/mprj_io[24]
  mgmt_buffers/mprj_logic_high_inst/HI[443]
  mgmt_buffers/mprj_logic_high_inst/HI[442]
  mgmt_buffers/mprj_logic_high_inst/HI[441]
@@ -1763,7 +1646,6 @@ Found 3126 unannotated nets.
  mgmt_buffers/mprj_logic_high_inst/HI[428]
  mgmt_buffers/mprj_logic_high_inst/HI[427]
  mgmt_buffers/mprj_logic_high_inst/HI[426]
- padframe/mprj_io[23]
  mgmt_buffers/mprj_logic_high_inst/HI[425]
  mgmt_buffers/mprj_logic_high_inst/HI[424]
  mgmt_buffers/mprj_logic_high_inst/HI[423]
@@ -1827,7 +1709,6 @@ Found 3126 unannotated nets.
  mgmt_buffers/mprj_logic_high_inst/HI[365]
  mgmt_buffers/mprj_logic_high_inst/HI[364]
  mgmt_buffers/mprj_logic_high_inst/HI[363]
- padframe/mprj_io[20]
  mgmt_buffers/mprj_logic_high_inst/HI[362]
  mgmt_buffers/mprj_logic_high_inst/HI[361]
  mgmt_buffers/mprj_logic_high_inst/HI[360]
@@ -1846,6 +1727,7 @@ Found 3126 unannotated nets.
  mgmt_buffers/mprj_logic_high_inst/HI[347]
  mgmt_buffers/mprj_logic_high_inst/HI[346]
  mgmt_buffers/mprj_logic_high_inst/HI[345]
+ padframe/mprj_io[19]
  mgmt_buffers/mprj_logic_high_inst/HI[344]
  mgmt_buffers/mprj_logic_high_inst/HI[343]
  mgmt_buffers/mprj_logic_high_inst/HI[342]
@@ -1864,12 +1746,12 @@ Found 3126 unannotated nets.
  mgmt_buffers/mprj_logic_high_inst/HI[329]
  mgmt_buffers/mprj_logic_high_inst/HI[328]
  mgmt_buffers/mprj_logic_high_inst/HI[327]
+ padframe/mprj_io[18]
  mgmt_buffers/mprj_logic_high_inst/HI[326]
  mgmt_buffers/mprj_logic_high_inst/HI[325]
  mgmt_buffers/mprj_logic_high_inst/HI[324]
  mgmt_buffers/mprj_logic_high_inst/HI[323]
  mgmt_buffers/mprj_logic_high_inst/HI[322]
- padframe/mprj_io[18]
  mgmt_buffers/mprj_logic_high_inst/HI[321]
  mgmt_buffers/mprj_logic_high_inst/HI[320]
  mgmt_buffers/mprj_logic_high_inst/HI[319]
@@ -1888,6 +1770,7 @@ Found 3126 unannotated nets.
  mgmt_buffers/mprj_logic_high_inst/HI[306]
  mgmt_buffers/mprj_logic_high_inst/HI[305]
  mgmt_buffers/mprj_logic_high_inst/HI[304]
+ padframe/mprj_io[17]
  mgmt_buffers/mprj_logic_high_inst/HI[303]
  mgmt_buffers/mprj_logic_high_inst/HI[302]
  mgmt_buffers/mprj_logic_high_inst/HI[301]
@@ -1896,7 +1779,6 @@ Found 3126 unannotated nets.
  mgmt_buffers/mprj_logic_high_inst/HI[298]
  mgmt_buffers/mprj_logic_high_inst/HI[297]
  mgmt_buffers/mprj_logic_high_inst/HI[296]
- padframe/mprj_analog_io[4]
  mgmt_buffers/mprj_logic_high_inst/HI[295]
  mgmt_buffers/mprj_logic_high_inst/HI[294]
  mgmt_buffers/mprj_logic_high_inst/HI[293]
@@ -1915,12 +1797,12 @@ Found 3126 unannotated nets.
  mgmt_buffers/mprj_logic_high_inst/HI[280]
  mgmt_buffers/mprj_logic_high_inst/HI[279]
  mgmt_buffers/mprj_logic_high_inst/HI[278]
+ padframe/mprj_analog_io[3]
  mgmt_buffers/mprj_logic_high_inst/HI[277]
  mgmt_buffers/mprj_logic_high_inst/HI[276]
  mgmt_buffers/mprj_logic_high_inst/HI[275]
  mgmt_buffers/mprj_logic_high_inst/HI[274]
  mgmt_buffers/mprj_logic_high_inst/HI[273]
- padframe/mprj_analog_io[3]
  mgmt_buffers/mprj_logic_high_inst/HI[272]
  mgmt_buffers/mprj_logic_high_inst/HI[271]
  mgmt_buffers/mprj_logic_high_inst/HI[270]
@@ -1957,6 +1839,7 @@ Found 3126 unannotated nets.
  mgmt_buffers/mprj_logic_high_inst/HI[239]
  mgmt_buffers/mprj_logic_high_inst/HI[238]
  mgmt_buffers/mprj_logic_high_inst/HI[237]
+ padframe/mprj_analog_io[1]
  mgmt_buffers/mprj_logic_high_inst/HI[236]
  mgmt_buffers/mprj_logic_high_inst/HI[235]
  mgmt_buffers/mprj_logic_high_inst/HI[234]
@@ -1980,11 +1863,11 @@ Found 3126 unannotated nets.
  mgmt_buffers/mprj_logic_high_inst/HI[216]
  mgmt_buffers/mprj_logic_high_inst/HI[215]
  mgmt_buffers/mprj_logic_high_inst/HI[214]
+ padframe/mprj_analog_io[0]
  mgmt_buffers/mprj_logic_high_inst/HI[213]
  mgmt_buffers/mprj_logic_high_inst/HI[212]
  mgmt_buffers/mprj_logic_high_inst/HI[211]
  mgmt_buffers/mprj_logic_high_inst/HI[210]
- padframe/mprj_analog_io[0]
  mgmt_buffers/mprj_logic_high_inst/HI[209]
  mgmt_buffers/mprj_logic_high_inst/HI[208]
  mgmt_buffers/mprj_logic_high_inst/HI[207]
@@ -1998,12 +1881,12 @@ Found 3126 unannotated nets.
  mgmt_buffers/mprj_logic_high_inst/HI[199]
  mgmt_buffers/mprj_logic_high_inst/HI[198]
  mgmt_buffers/mprj_logic_high_inst/HI[197]
+ padframe/mprj_io[37]
  mgmt_buffers/mprj_logic_high_inst/HI[196]
  mgmt_buffers/mprj_logic_high_inst/HI[195]
  mgmt_buffers/mprj_logic_high_inst/HI[194]
  mgmt_buffers/mprj_logic_high_inst/HI[193]
  mgmt_buffers/mprj_logic_high_inst/HI[192]
- padframe/mprj_io[37]
  mgmt_buffers/mprj_logic_high_inst/HI[191]
  mgmt_buffers/mprj_logic_high_inst/HI[190]
  mgmt_buffers/mprj_logic_high_inst/HI[189]
@@ -2022,6 +1905,7 @@ Found 3126 unannotated nets.
  mgmt_buffers/mprj_logic_high_inst/HI[176]
  mgmt_buffers/mprj_logic_high_inst/HI[175]
  mgmt_buffers/mprj_logic_high_inst/HI[174]
+ padframe/mprj_io[36]
  mgmt_buffers/mprj_logic_high_inst/HI[173]
  mgmt_buffers/mprj_logic_high_inst/HI[172]
  mgmt_buffers/mprj_logic_high_inst/HI[171]
@@ -2031,7 +1915,6 @@ Found 3126 unannotated nets.
  mgmt_buffers/mprj_logic_high_inst/HI[167]
  mgmt_buffers/mprj_logic_high_inst/HI[166]
  mgmt_buffers/mprj_logic_high_inst/HI[165]
- padframe/mprj_analog_io[22]
  mgmt_buffers/mprj_logic_high_inst/HI[164]
  mgmt_buffers/mprj_logic_high_inst/HI[163]
  mgmt_buffers/mprj_logic_high_inst/HI[162]
@@ -2050,12 +1933,12 @@ Found 3126 unannotated nets.
  mgmt_buffers/mprj_logic_high_inst/HI[149]
  mgmt_buffers/mprj_logic_high_inst/HI[148]
  mgmt_buffers/mprj_logic_high_inst/HI[147]
+ padframe/mprj_analog_io[13]
  mgmt_buffers/mprj_logic_high_inst/HI[146]
  mgmt_buffers/mprj_logic_high_inst/HI[145]
  mgmt_buffers/mprj_logic_high_inst/HI[144]
  mgmt_buffers/mprj_logic_high_inst/HI[143]
  mgmt_buffers/mprj_logic_high_inst/HI[142]
- padframe/mprj_analog_io[11]
  mgmt_buffers/mprj_logic_high_inst/HI[141]
  mgmt_buffers/mprj_logic_high_inst/HI[140]
  mgmt_buffers/mprj_logic_high_inst/HI[139]
@@ -2097,18 +1980,17 @@ Found 3126 unannotated nets.
  mgmt_buffers/mprj_logic_high_inst/HI[103]
  mgmt_buffers/mprj_logic_high_inst/HI[102]
  mgmt_buffers/mprj_logic_high_inst/HI[101]
- padframe/mprj_analog_io[23]
  mgmt_buffers/mprj_logic_high_inst/HI[100]
  mgmt_buffers/mprj_logic_high_inst/HI[99]
  mgmt_buffers/mprj_logic_high_inst/HI[98]
  mgmt_buffers/mprj_logic_high_inst/HI[97]
  mgmt_buffers/mprj_logic_high_inst/HI[96]
+ padframe/mprj_io[27]
  mgmt_buffers/mprj_logic_high_inst/HI[95]
  mgmt_buffers/mprj_logic_high_inst/HI[94]
  mgmt_buffers/mprj_logic_high_inst/HI[93]
  mgmt_buffers/mprj_logic_high_inst/HI[92]
  mgmt_buffers/mprj_logic_high_inst/HI[91]
- padframe/mprj_io[27]
  mgmt_buffers/mprj_logic_high_inst/HI[90]
  mgmt_buffers/mprj_logic_high_inst/HI[89]
  mgmt_buffers/mprj_logic_high_inst/HI[88]
@@ -2127,11 +2009,11 @@ Found 3126 unannotated nets.
  mgmt_buffers/mprj_logic_high_inst/HI[75]
  mgmt_buffers/mprj_logic_high_inst/HI[74]
  mgmt_buffers/mprj_logic_high_inst/HI[73]
+ padframe/mprj_io[26]
  mgmt_buffers/mprj_logic_high_inst/HI[72]
  mgmt_buffers/mprj_logic_high_inst/HI[71]
  mgmt_buffers/mprj_logic_high_inst/HI[70]
  mgmt_buffers/mprj_logic_high_inst/HI[69]
- padframe/mprj_io[26]
  mgmt_buffers/mprj_logic_high_inst/HI[68]
  mgmt_buffers/mprj_logic_high_inst/HI[67]
  mgmt_buffers/mprj_logic_high_inst/HI[66]
@@ -2205,202 +2087,266 @@ Found 3126 unannotated nets.
  mgmt_buffers/powergood_check/mprj_vdd_logic1
  mgmt_buffers/powergood_check/mprj2_vdd_logic1_h
  mgmt_buffers/powergood_check/mprj_vdd_logic1_h
- padframe/mprj_io[35]
- padframe/mprj_io[30]
- padframe/mprj_io[14]
+ padframe/mprj_io[28]
+ sigbuf/buf_in\[135\]
+ sigbuf/buf_in\[134\]
+ sigbuf/buf_in\[138\]
+ padframe/mprj_io[32]
  padframe/mprj_io[13]
- padframe/mprj_io[12]
- padframe/mprj_io[19]
- padframe/mprj_analog_io[2]
- padframe/mprj_io[36]
- vdda
- vdda1
- mprj_io[29]
- vssa
- mprj_io[28]
- gpio
- vssio
- mprj_io[27]
- mprj_io[26]
- mprj_io[25]
- mprj_io[24]
- mprj_io[23]
- mprj_io[22]
- mprj_io[21]
- mprj_io[20]
- mprj_io[19]
- mprj_io[18]
- mprj_io[17]
- vdda1_2
- vccd2
- vddio_2
- vddio
- vdda2
- mprj_io[16]
- mprj_io[15]
- mprj_io[14]
- mprj_io[13]
- mprj_io[12]
- mprj_io[11]
- mprj_io[10]
- mprj_io[9]
- mprj_io[8]
- mprj_io[7]
- mprj_io[6]
- mprj_io[5]
- mprj_io[4]
- mprj_io[3]
- mprj_io[2]
- mprj_io[1]
- mprj_io[0]
- resetb
- vssa2
- vssa1_2
- vssd1
- vssa1
- vccd1
- mprj_io[32]
- mprj_io[31]
- mprj_io[36]
- clock
- mprj_io[35]
- mprj_io[34]
- mprj_io[33]
- vssd2
- mprj_io[37]
- vssd
- vccd
- mprj_io[30]
- gpio_control_bidir_1\[0\]/_056_
- gpio_control_bidir_1\[0\]/_055_
- gpio_control_bidir_1\[0\]/_054_
- gpio_control_bidir_1\[0\]/_053_
- gpio_control_bidir_1\[0\]/_052_
- gpio_control_bidir_1\[0\]/_051_
- gpio_control_bidir_1\[0\]/_050_
- gpio_control_bidir_1\[0\]/_049_
- gpio_control_bidir_1\[0\]/_048_
- gpio_control_bidir_1\[0\]/_047_
- gpio_control_bidir_1\[0\]/_046_
- gpio_control_bidir_1\[0\]/_057_
- gpio_control_bidir_1\[0\]/gpio_logic_high/gpio_logic1
- gpio_control_bidir_1\[1\]/_056_
- gpio_control_bidir_1\[1\]/_055_
- gpio_control_bidir_1\[1\]/_054_
- gpio_control_bidir_1\[1\]/_053_
- gpio_control_bidir_1\[1\]/_052_
- gpio_control_bidir_1\[1\]/_051_
- gpio_control_bidir_1\[1\]/_050_
- gpio_control_bidir_1\[1\]/_049_
- gpio_control_bidir_1\[1\]/_048_
- gpio_control_bidir_1\[1\]/_047_
- gpio_control_bidir_1\[1\]/_046_
- gpio_control_bidir_1\[1\]/_057_
- gpio_control_bidir_1\[1\]/gpio_logic_high/gpio_logic1
- gpio_control_bidir_2\[0\]/_056_
- gpio_control_bidir_2\[0\]/_055_
- gpio_control_bidir_2\[0\]/_054_
- gpio_control_bidir_2\[0\]/_053_
- gpio_control_bidir_2\[0\]/_052_
- gpio_control_bidir_2\[0\]/_051_
- gpio_control_bidir_2\[0\]/_050_
- gpio_control_bidir_2\[0\]/_049_
- gpio_control_bidir_2\[0\]/_048_
- gpio_control_bidir_2\[0\]/_047_
- gpio_control_bidir_2\[0\]/_046_
- gpio_control_bidir_2\[0\]/_057_
- gpio_control_bidir_2\[0\]/gpio_logic_high/gpio_logic1
- gpio_control_bidir_2\[1\]/_056_
- gpio_control_bidir_2\[1\]/_055_
- gpio_control_bidir_2\[1\]/_054_
- gpio_control_bidir_2\[1\]/_053_
- gpio_control_bidir_2\[1\]/_052_
- gpio_control_bidir_2\[1\]/_051_
- gpio_control_bidir_2\[1\]/_050_
- gpio_control_bidir_2\[1\]/_049_
- gpio_control_bidir_2\[1\]/_048_
- gpio_control_bidir_2\[1\]/_047_
- gpio_control_bidir_2\[1\]/_046_
- gpio_control_bidir_2\[1\]/_057_
- gpio_control_bidir_2\[1\]/gpio_logic_high/gpio_logic1
- gpio_control_bidir_2\[2\]/_056_
- gpio_control_bidir_2\[2\]/_055_
- gpio_control_bidir_2\[2\]/_054_
- gpio_control_bidir_2\[2\]/_053_
- gpio_control_bidir_2\[2\]/_052_
- gpio_control_bidir_2\[2\]/_051_
- gpio_control_bidir_2\[2\]/_050_
- gpio_control_bidir_2\[2\]/_049_
- gpio_control_bidir_2\[2\]/_048_
- gpio_control_bidir_2\[2\]/_047_
- gpio_control_bidir_2\[2\]/_046_
- gpio_control_bidir_2\[2\]/_057_
- gpio_control_bidir_2\[2\]/gpio_logic_high/gpio_logic1
- gpio_control_in_1\[0\]/_056_
- gpio_control_in_1\[0\]/_055_
- gpio_control_in_1\[0\]/_054_
- gpio_control_in_1\[0\]/_053_
- gpio_control_in_1\[0\]/_052_
- gpio_control_in_1\[0\]/_051_
- gpio_control_in_1\[0\]/_050_
- gpio_control_in_1\[0\]/_049_
- gpio_control_in_1\[0\]/_048_
- gpio_control_in_1\[0\]/_047_
- gpio_control_in_1\[0\]/_046_
- gpio_control_in_1\[0\]/_057_
- gpio_control_in_1\[0\]/gpio_logic_high/gpio_logic1
- gpio_control_in_1\[10\]/_056_
- gpio_control_in_1\[10\]/_055_
- gpio_control_in_1\[10\]/_054_
- gpio_control_in_1\[10\]/_053_
- gpio_control_in_1\[10\]/_052_
- gpio_control_in_1\[10\]/_051_
- gpio_control_in_1\[10\]/_050_
- gpio_control_in_1\[10\]/_049_
- gpio_control_in_1\[10\]/_048_
- gpio_control_in_1\[10\]/_047_
- gpio_control_in_1\[10\]/_046_
- gpio_control_in_1\[10\]/_057_
- gpio_control_in_1\[10\]/gpio_logic_high/gpio_logic1
- gpio_control_in_1\[1\]/_056_
- gpio_control_in_1\[1\]/_055_
- gpio_control_in_1\[1\]/_054_
- gpio_control_in_1\[1\]/_053_
- gpio_control_in_1\[1\]/_052_
- gpio_control_in_1\[1\]/_051_
- gpio_control_in_1\[1\]/_050_
- gpio_control_in_1\[1\]/_049_
- gpio_control_in_1\[1\]/_048_
- gpio_control_in_1\[1\]/_047_
- gpio_control_in_1\[1\]/_046_
- gpio_control_in_1\[1\]/_057_
- gpio_control_in_1\[1\]/gpio_logic_high/gpio_logic1
- gpio_control_in_1\[2\]/_056_
- gpio_control_in_1\[2\]/_055_
- gpio_control_in_1\[2\]/_054_
- gpio_control_in_1\[2\]/_053_
- gpio_control_in_1\[2\]/_052_
- gpio_control_in_1\[2\]/_051_
- gpio_control_in_1\[2\]/_050_
- gpio_control_in_1\[2\]/_049_
- gpio_control_in_1\[2\]/_048_
- gpio_control_in_1\[2\]/_047_
- gpio_control_in_1\[2\]/_046_
- gpio_control_in_1\[2\]/_057_
- gpio_control_in_1\[2\]/gpio_logic_high/gpio_logic1
- gpio_control_in_1\[3\]/_056_
- gpio_control_in_1\[3\]/_055_
- gpio_control_in_1\[3\]/_054_
- gpio_control_in_1\[3\]/_053_
- gpio_control_in_1\[3\]/_052_
- gpio_control_in_1\[3\]/_051_
- gpio_control_in_1\[3\]/_050_
- gpio_control_in_1\[3\]/_049_
- gpio_control_in_1\[3\]/_048_
- gpio_control_in_1\[3\]/_047_
- gpio_control_in_1\[3\]/_046_
- gpio_control_in_1\[3\]/_057_
- gpio_control_in_1\[3\]/gpio_logic_high/gpio_logic1
+ padframe/mprj_io[11]
+ padframe/mprj_analog_io[4]
+ padframe/mprj_io[35]
+ padframe/mprj_io[21]
+ padframe/mprj_io[15]
+ sigbuf/buf_in\[159\]
+ padframe/mprj_io[29]
+ padframe/mprj_io[30]
+ padframe/mprj_io[31]
+ padframe/mprj_io[33]
+ padframe/mprj_io[14]
+ padframe/mprj_io[16]
+ padframe/mprj_io[0]
+ padframe/mprj_io[3]
+ padframe/mprj_io[6]
+ padframe/mprj_io[2]
+ sigbuf/buf_in\[157\]
+ sigbuf/buf_in\[156\]
+ sigbuf/buf_in\[155\]
+ sigbuf/buf_out\[153\]
+ sigbuf/buf_in\[153\]
+ sigbuf/buf_in\[152\]
+ sigbuf/buf_in\[151\]
+ sigbuf/buf_in\[15\]
+ sigbuf/buf_in\[148\]
+ sigbuf/buf_out\[157\]
+ sigbuf/buf_in\[163\]
+ sigbuf/buf_out\[161\]
+ sigbuf/buf_out\[15\]
+ mprj/mprj/la_data_out[95]
+ mprj/mprj/la_data_out[94]
+ sigbuf/buf_out\[172\]
+ mprj/mprj/la_data_out[93]
+ mprj/mprj/la_data_out[92]
+ mprj/mprj/la_data_out[91]
+ mprj/mprj/la_data_out[90]
+ mprj/mprj/la_data_out[89]
+ mprj/mprj/la_data_out[88]
+ mprj/mprj/la_data_out[87]
+ sigbuf/buf_in\[172\]
+ mprj/mprj/la_data_out[86]
+ mprj/mprj/la_data_out[85]
+ mprj/mprj/la_data_out[84]
+ mprj/mprj/la_data_out[83]
+ mprj/mprj/la_data_out[82]
+ mprj/mprj/la_data_out[81]
+ mprj/mprj/la_data_out[80]
+ mprj/mprj/la_data_out[79]
+ sigbuf/buf_in\[171\]
+ mprj/mprj/la_data_out[78]
+ mprj/mprj/la_data_out[77]
+ mprj/mprj/la_data_out[76]
+ mprj/mprj/la_data_out[75]
+ mprj/mprj/la_data_out[74]
+ mprj/mprj/la_data_out[73]
+ mprj/mprj/la_data_out[72]
+ mprj/mprj/la_data_out[71]
+ sigbuf/buf_in\[17\]
+ mprj/mprj/la_data_out[70]
+ mprj/mprj/la_data_out[69]
+ mprj/mprj/la_data_out[68]
+ mprj/mprj/la_data_out[67]
+ mprj/mprj/la_data_out[66]
+ mprj/mprj/la_data_out[65]
+ mprj/mprj/la_data_out[64]
+ mprj/mprj/la_data_out[63]
+ sigbuf/buf_out\[169\]
+ mprj/mprj/la_data_out[62]
+ mprj/mprj/la_data_out[61]
+ mprj/mprj/la_data_out[60]
+ mprj/mprj/la_data_out[59]
+ mprj/mprj/la_data_out[58]
+ mprj/mprj/la_data_out[57]
+ mprj/mprj/la_data_out[56]
+ sigbuf/buf_in\[169\]
+ mprj/mprj/la_data_out[55]
+ mprj/mprj/la_data_out[54]
+ mprj/mprj/la_data_out[53]
+ mprj/mprj/la_data_out[52]
+ mprj/mprj/la_data_out[51]
+ mprj/mprj/la_data_out[50]
+ mprj/mprj/la_data_out[49]
+ mprj/mprj/la_data_out[48]
+ sigbuf/buf_in\[168\]
+ mprj/mprj/la_data_out[47]
+ mprj/mprj/la_data_out[46]
+ mprj/mprj/la_data_out[45]
+ mprj/mprj/la_data_out[44]
+ mprj/mprj/la_data_out[43]
+ mprj/mprj/la_data_out[42]
+ mprj/mprj/la_data_out[41]
+ mprj/mprj/la_data_out[40]
+ sigbuf/buf_in\[167\]
+ mprj/mprj/la_data_out[39]
+ mprj/mprj/la_data_out[38]
+ mprj/mprj/la_data_out[37]
+ mprj/mprj/la_data_out[36]
+ mprj/mprj/la_data_out[35]
+ mprj/mprj/la_data_out[34]
+ mprj/mprj/la_data_out[33]
+ mprj/mprj/la_data_out[32]
+ sigbuf/buf_out\[165\]
+ sigbuf/buf_in\[165\]
+ sigbuf/buf_in\[164\]
+ sigbuf/buf_in\[161\]
+ sigbuf/buf_in\[177\]
+ sigbuf/buf_out\[175\]
+ sigbuf/buf_in\[175\]
+ sigbuf/buf_in\[174\]
+ sigbuf/buf_in\[187\]
+ sigbuf/buf_out\[185\]
+ sigbuf/buf_in\[185\]
+ sigbuf/buf_out\[183\]
+ sigbuf/buf_in\[183\]
+ sigbuf/buf_out\[181\]
+ sigbuf/buf_in\[181\]
+ sigbuf/buf_in\[180\]
+ sigbuf/buf_out\[178\]
+ sigbuf/buf_in\[178\]
+ sigbuf/buf_in\[18\]
+ sigbuf/buf_in\[65\]
+ sigbuf/buf_in\[64\]
+ sigbuf/buf_out\[62\]
+ sigbuf/buf_in\[66\]
+ sigbuf/buf_in\[69\]
+ sigbuf/buf_in\[68\]
+ sigbuf/buf_out\[66\]
+ sigbuf/buf_in\[70\]
+ mprj/mprj/wbs_dat_o[31]
+ mprj/mprj/wbs_dat_o[30]
+ sigbuf/buf_in\[72\]
+ mprj/mprj/wbs_dat_o[29]
+ mprj/mprj/wbs_dat_o[28]
+ mprj/mprj/wbs_dat_o[27]
+ mprj/mprj/wbs_dat_o[26]
+ mprj/mprj/wbs_dat_o[25]
+ mprj/mprj/wbs_dat_o[24]
+ mprj/mprj/wbs_dat_o[23]
+ sigbuf/buf_out\[70\]
+ mprj/mprj/wbs_dat_o[22]
+ mprj/mprj/wbs_dat_o[21]
+ mprj/mprj/wbs_dat_o[20]
+ mprj/mprj/wbs_dat_o[19]
+ mprj/mprj/wbs_dat_o[18]
+ mprj/mprj/wbs_dat_o[17]
+ mprj/mprj/wbs_dat_o[16]
+ mprj/mprj/wbs_dat_o[15]
+ sigbuf/buf_in\[7\]
+ mprj/mprj/wbs_dat_o[14]
+ mprj/mprj/wbs_dat_o[13]
+ mprj/mprj/wbs_dat_o[12]
+ mprj/mprj/wbs_dat_o[11]
+ mprj/mprj/wbs_dat_o[10]
+ mprj/mprj/wbs_dat_o[9]
+ mprj/mprj/wbs_dat_o[8]
+ mprj/mprj/wbs_dat_o[7]
+ mprj/mprj/wbs_dat_o[6]
+ mprj/mprj/wbs_dat_o[5]
+ mprj/mprj/wbs_dat_o[4]
+ mprj/mprj/wbs_dat_o[3]
+ mprj/mprj/wbs_dat_o[2]
+ mprj/mprj/wbs_dat_o[1]
+ mprj/mprj/wbs_dat_o[0]
+ sigbuf/buf_in\[73\]
+ sigbuf/buf_in\[189\]
+ padframe/mprj_pads.io_in_3v3\[7\]
+ sigbuf/buf_out\[191\]
+ sigbuf/buf_in\[193\]
+ sigbuf/buf_out\[189\]
+ sigbuf/buf_out\[18\]
+ sigbuf/buf_in\[191\]
+ padframe/mprj_pads.loop0_io\[19\]
+ sigbuf/buf_out\[193\]
+ sigbuf/buf_in\[195\]
+ sigbuf/buf_in\[20\]
+ sigbuf/buf_in\[27\]
+ sigbuf/buf_out\[22\]
+ padframe/mprj_pads.io_in\[33\]
+ sigbuf/buf_in\[25\]
+ sigbuf/buf_in\[58\]
+ sigbuf/buf_in\[24\]
+ padframe/mprj_pads.io_in_3v3\[36\]
+ sigbuf/buf_in\[50\]
+ sigbuf/buf_in\[82\]
+ padframe/mprj_pads.loop0_io\[21\]
+ sigbuf/buf_in\[26\]
+ sigbuf/buf_in\[57\]
+ sigbuf/buf_out\[5\]
+ sigbuf/buf_in\[38\]
+ sigbuf/buf_out\[58\]
+ sigbuf/buf_in\[60\]
+ padframe/mprj_pads.loop0_io\[24\]
+ sigbuf/buf_in\[34\]
+ padframe/xres_vss_loop
+ sigbuf/buf_out\[45\]
+ sigbuf/buf_in\[133\]
+ sigbuf/buf_in\[132\]
+ sigbuf/buf_in\[126\]
+ sigbuf/buf_in\[121\]
+ sigbuf/buf_out\[107\]
+ sigbuf/buf_in\[131\]
+ sigbuf/buf_in\[125\]
+ sigbuf/buf_in\[119\]
+ sigbuf/buf_out\[104\]
+ sigbuf/buf_in\[85\]
+ sigbuf/buf_in\[120\]
+ sigbuf/buf_in\[106\]
+ sigbuf/buf_in\[127\]
+ sigbuf/buf_in\[12\]
+ sigbuf/buf_in\[107\]
+ sigbuf/buf_in\[128\]
+ sigbuf/buf_in\[129\]
+ sigbuf/buf_in\[122\]
+ sigbuf/buf_in\[109\]
+ sigbuf/buf_out\[129\]
+ sigbuf/buf_in\[123\]
+ sigbuf/buf_in\[110\]
+ sigbuf/buf_out\[12\]
+ sigbuf/buf_out\[123\]
+ sigbuf/buf_in\[11\]
+ sigbuf/buf_in\[61\]
+ sigbuf/buf_out\[99\]
+ sigbuf/buf_in\[74\]
+ sigbuf/buf_in\[79\]
+ sigbuf/buf_out\[92\]
+ sigbuf/buf_in\[94\]
+ sigbuf/buf_out\[95\]
+ sigbuf/buf_out\[96\]
+ sigbuf/buf_out\[97\]
+ sigbuf/buf_out\[9\]
+ sigbuf/buf_out\[117\]
+ sigbuf/buf_out\[110\]
+ sigbuf/buf_in\[112\]
+ sigbuf/buf_in\[113\]
+ sigbuf/buf_out\[113\]
+ sigbuf/buf_in\[115\]
+ sigbuf/buf_in\[116\]
+ sigbuf/buf_in\[117\]
+ rstb_level/X
+ sigbuf/buf_in\[9\]
+ sigbuf/buf_out\[187\]
+ sigbuf/buf_out\[1\]
+ sigbuf/buf_out\[195\]
+ sigbuf/buf_in\[21\]
+ sigbuf/buf_in\[22\]
+ sigbuf/buf_out\[0\]
+ sigbuf/buf_out\[100\]
+ sigbuf/buf_in\[104\]
+ sigbuf/buf_in\[102\]
+ sigbuf/buf_out\[102\]
+ sigbuf/buf_in\[92\]
+ sigbuf/buf_out\[74\]
+ sigbuf/buf_out\[90\]
+ sigbuf/buf_in\[76\]
  padframe/resetb
  padframe/resetb_core_h
  padframe/vccd1_pad
@@ -2410,6 +2356,7 @@ Found 3126 unannotated nets.
  padframe/vdda1_pad2
  padframe/vdda2_pad
  padframe/vdda_pad
+ padframe/vddio_pad
  padframe/vddio_pad2
  padframe/vssa1_pad
  padframe/vssa1_pad2
@@ -2421,12 +2368,17 @@ Found 3126 unannotated nets.
  padframe/vssio_pad
  padframe/vssio_pad2
  padframe/mprj_pads.analog_a
+ padframe/mprj_pads.analog_b
  padframe/loop_zero_clock
+ sigbuf/buf_out\[88\]
  padframe/loop_one_clock
+ padframe/constant_value_inst\[0\]/one
  padframe/constant_value_inst\[0\]/zero
  padframe/constant_value_inst\[0\]/one_unbuf
  padframe/constant_value_inst\[0\]/zero_unbuf
  padframe/constant_value_inst\[1\]/one
+ padframe/constant_value_inst\[1\]/zero
+ padframe/constant_value_inst\[1\]/one_unbuf
  padframe/constant_value_inst\[1\]/zero_unbuf
  padframe/constant_value_inst\[2\]/one
  padframe/constant_value_inst\[2\]/zero
@@ -2436,6 +2388,7 @@ Found 3126 unannotated nets.
  padframe/constant_value_inst\[3\]/zero
  padframe/constant_value_inst\[3\]/one_unbuf
  padframe/constant_value_inst\[3\]/zero_unbuf
+ padframe/constant_value_inst\[4\]/one
  padframe/constant_value_inst\[4\]/zero
  padframe/constant_value_inst\[4\]/one_unbuf
  padframe/constant_value_inst\[4\]/zero_unbuf
@@ -2463,6 +2416,7 @@ Found 3126 unannotated nets.
  padframe/mprj_pads.io_in_3v3\[0\]
  padframe/mprj_pads.no_connect_1b\[0\]
  padframe/mprj_pads.no_connect_1a\[0\]
+ padframe/mprj_pads.loop0_io\[10\]
  padframe/mprj_pads.loop1_io\[10\]
  padframe/mprj_pads.io_in\[10\]
  padframe/mprj_pads.io_in_3v3\[10\]
@@ -2489,6 +2443,7 @@ Found 3126 unannotated nets.
  padframe/mprj_pads.analog_noesd_io\[7\]
  padframe/mprj_pads.loop0_io\[15\]
  padframe/mprj_pads.loop1_io\[15\]
+ padframe/mprj_pads.io_in\[15\]
  padframe/mprj_pads.io_in_3v3\[15\]
  padframe/mprj_pads.analog_noesd_io\[8\]
  padframe/mprj_pads.loop0_io\[16\]
@@ -2497,10 +2452,13 @@ Found 3126 unannotated nets.
  padframe/mprj_pads.io_in_3v3\[16\]
  padframe/mprj_pads.analog_noesd_io\[9\]
  padframe/mprj_pads.loop0_io\[17\]
+ padframe/mprj_pads.loop1_io\[17\]
  padframe/mprj_pads.io_in\[17\]
  padframe/mprj_pads.io_in_3v3\[17\]
+ padframe/mprj_pads.analog_noesd_io\[10\]
  padframe/mprj_pads.loop0_io\[18\]
  padframe/mprj_pads.loop1_io\[18\]
+ padframe/mprj_pads.io_in\[18\]
  padframe/mprj_pads.io_in_3v3\[18\]
  padframe/mprj_pads.analog_noesd_io\[11\]
  padframe/mprj_pads.loop0_io\[1\]
@@ -2521,23 +2479,29 @@ Found 3126 unannotated nets.
  padframe/mprj_pads.io_in_3v3\[3\]
  padframe/mprj_pads.no_connect_1b\[3\]
  padframe/mprj_pads.no_connect_1a\[3\]
+ padframe/mprj_pads.loop0_io\[4\]
  padframe/mprj_pads.loop1_io\[4\]
  padframe/mprj_pads.io_in\[4\]
  padframe/mprj_pads.io_in_3v3\[4\]
  padframe/mprj_pads.no_connect_1b\[4\]
  padframe/mprj_pads.no_connect_1a\[4\]
+ padframe/mprj_pads.loop0_io\[5\]
  padframe/mprj_pads.loop1_io\[5\]
  padframe/mprj_pads.io_in\[5\]
  padframe/mprj_pads.io_in_3v3\[5\]
  padframe/mprj_pads.no_connect_1b\[5\]
  padframe/mprj_pads.no_connect_1a\[5\]
+ sigbuf/buf_out\[83\]
  padframe/mprj_pads.loop0_io\[6\]
+ padframe/mprj_pads.loop1_io\[6\]
  padframe/mprj_pads.io_in\[6\]
  padframe/mprj_pads.io_in_3v3\[6\]
+ padframe/mprj_pads.no_connect_1b\[6\]
  padframe/mprj_pads.no_connect_1a\[6\]
  padframe/mprj_pads.loop0_io\[7\]
+ padframe/mprj_pads.loop1_io\[7\]
  padframe/mprj_pads.io_in\[7\]
- padframe/mprj_pads.io_in_3v3\[7\]
+ padframe/mprj_pads.analog_noesd_io\[0\]
  padframe/mprj_pads.loop0_io\[8\]
  padframe/mprj_pads.loop1_io\[8\]
  padframe/mprj_pads.io_in\[8\]
@@ -2548,7 +2512,6 @@ Found 3126 unannotated nets.
  padframe/mprj_pads.io_in\[9\]
  padframe/mprj_pads.io_in_3v3\[9\]
  padframe/mprj_pads.analog_noesd_io\[2\]
- padframe/mprj_pads.loop0_io\[19\]
  padframe/mprj_pads.loop1_io\[19\]
  padframe/mprj_pads.io_in\[19\]
  padframe/mprj_pads.io_in_3v3\[19\]
@@ -2558,6 +2521,7 @@ Found 3126 unannotated nets.
  padframe/mprj_pads.io_in\[29\]
  padframe/mprj_pads.io_in_3v3\[29\]
  padframe/mprj_pads.analog_noesd_io\[22\]
+ padframe/mprj_pads.loop0_io\[30\]
  padframe/mprj_pads.loop1_io\[30\]
  padframe/mprj_pads.io_in\[30\]
  padframe/mprj_pads.io_in_3v3\[30\]
@@ -2574,7 +2538,6 @@ Found 3126 unannotated nets.
  padframe/mprj_pads.analog_noesd_io\[25\]
  padframe/mprj_pads.loop0_io\[33\]
  padframe/mprj_pads.loop1_io\[33\]
- padframe/mprj_pads.io_in\[33\]
  padframe/mprj_pads.io_in_3v3\[33\]
  padframe/mprj_pads.analog_noesd_io\[26\]
  padframe/mprj_pads.loop0_io\[34\]
@@ -2584,24 +2547,25 @@ Found 3126 unannotated nets.
  padframe/mprj_pads.analog_noesd_io\[27\]
  padframe/mprj_pads.loop0_io\[35\]
  padframe/mprj_pads.loop1_io\[35\]
+ padframe/mprj_pads.io_in\[35\]
  padframe/mprj_pads.io_in_3v3\[35\]
  padframe/mprj_pads.analog_noesd_io\[28\]
  padframe/mprj_pads.loop0_io\[36\]
  padframe/mprj_pads.loop1_io\[36\]
  padframe/mprj_pads.io_in\[36\]
- padframe/mprj_pads.io_in_3v3\[36\]
  padframe/mprj_pads.no_connect_2b\[0\]
  padframe/mprj_pads.no_connect_2a\[0\]
  padframe/mprj_pads.loop0_io\[37\]
  padframe/mprj_pads.loop1_io\[37\]
  padframe/mprj_pads.io_in\[37\]
+ padframe/mprj_pads.io_in_3v3\[37\]
  padframe/mprj_pads.no_connect_2b\[1\]
  padframe/mprj_pads.no_connect_2a\[1\]
  padframe/mprj_pads.loop0_io\[20\]
  padframe/mprj_pads.loop1_io\[20\]
  padframe/mprj_pads.io_in\[20\]
+ padframe/mprj_pads.io_in_3v3\[20\]
  padframe/mprj_pads.analog_noesd_io\[13\]
- padframe/mprj_pads.loop0_io\[21\]
  padframe/mprj_pads.loop1_io\[21\]
  padframe/mprj_pads.io_in\[21\]
  padframe/mprj_pads.io_in_3v3\[21\]
@@ -2616,11 +2580,11 @@ Found 3126 unannotated nets.
  padframe/mprj_pads.io_in\[23\]
  padframe/mprj_pads.io_in_3v3\[23\]
  padframe/mprj_pads.analog_noesd_io\[16\]
- padframe/mprj_pads.loop0_io\[24\]
  padframe/mprj_pads.loop1_io\[24\]
  padframe/mprj_pads.io_in\[24\]
  padframe/mprj_pads.io_in_3v3\[24\]
  padframe/mprj_pads.analog_noesd_io\[17\]
+ sigbuf/buf_out\[77\]
  padframe/mprj_pads.loop0_io\[25\]
  padframe/mprj_pads.loop1_io\[25\]
  padframe/mprj_pads.io_in\[25\]
@@ -2631,6 +2595,7 @@ Found 3126 unannotated nets.
  padframe/mprj_pads.io_in\[26\]
  padframe/mprj_pads.io_in_3v3\[26\]
  padframe/mprj_pads.analog_noesd_io\[19\]
+ padframe/mprj_pads.loop0_io\[27\]
  padframe/mprj_pads.loop1_io\[27\]
  padframe/mprj_pads.io_in\[27\]
  padframe/mprj_pads.io_in_3v3\[27\]
@@ -2640,12 +2605,30 @@ Found 3126 unannotated nets.
  padframe/mprj_pads.io_in\[28\]
  padframe/mprj_pads.io_in_3v3\[28\]
  padframe/mprj_pads.analog_noesd_io\[21\]
- padframe/xres_vss_loop
  padframe/xresloop
+ sigbuf/buf_out\[94\]
+ sigbuf/buf_in\[80\]
+ sigbuf/buf_out\[98\]
+ sigbuf/buf_in\[83\]
+ sigbuf/buf_out\[7\]
+ sigbuf/buf_in\[77\]
+ sigbuf/buf_out\[80\]
+ sigbuf/buf_in\[39\]
+ sigbuf/buf_in\[56\]
+ sigbuf/buf_in\[28\]
+ sigbuf/buf_out\[28\]
+ sigbuf/buf_in\[30\]
+ sigbuf/buf_out\[2\]
+ sigbuf/buf_in\[31\]
+ sigbuf/buf_in\[32\]
+ sigbuf/buf_in\[33\]
+ mprj/mprj/net340
+ mprj/mprj/net341
  mprj/mprj/net342
  mprj/mprj/net343
  mprj/mprj/net344
  mprj/mprj/net345
+ sigbuf/buf_in\[40\]
  mprj/mprj/net346
  mprj/mprj/net347
  mprj/mprj/net348
@@ -2654,6 +2637,7 @@ Found 3126 unannotated nets.
  mprj/mprj/net351
  mprj/mprj/net352
  mprj/mprj/net353
+ sigbuf/buf_out\[3\]
  mprj/mprj/net354
  mprj/mprj/net355
  mprj/mprj/net356
@@ -2661,6 +2645,7 @@ Found 3126 unannotated nets.
  mprj/mprj/net358
  mprj/mprj/net359
  mprj/mprj/net360
+ sigbuf/buf_out\[40\]
  mprj/mprj/net361
  mprj/mprj/net362
  mprj/mprj/net363
@@ -2670,6 +2655,7 @@ Found 3126 unannotated nets.
  mprj/mprj/net367
  mprj/mprj/net368
  mprj/mprj/net369
+ sigbuf/buf_in\[42\]
  mprj/mprj/net370
  mprj/mprj/net371
  mprj/mprj/net372
@@ -2677,6 +2663,7 @@ Found 3126 unannotated nets.
  mprj/mprj/net374
  mprj/mprj/net375
  mprj/mprj/net376
+ sigbuf/buf_in\[43\]
  mprj/mprj/net377
  mprj/mprj/net378
  mprj/mprj/net379
@@ -2685,6 +2672,7 @@ Found 3126 unannotated nets.
  mprj/mprj/net382
  mprj/mprj/net383
  mprj/mprj/net384
+ sigbuf/buf_in\[44\]
  mprj/mprj/net385
  mprj/mprj/net386
  mprj/mprj/net387
@@ -2692,6 +2680,7 @@ Found 3126 unannotated nets.
  mprj/mprj/net389
  mprj/mprj/net390
  mprj/mprj/net391
+ sigbuf/buf_in\[45\]
  mprj/mprj/net392
  mprj/mprj/net393
  mprj/mprj/net394
@@ -2707,6 +2696,7 @@ Found 3126 unannotated nets.
  mprj/mprj/net404
  mprj/mprj/net405
  mprj/mprj/net406
+ sigbuf/buf_in\[47\]
  mprj/mprj/net407
  mprj/mprj/net408
  mprj/mprj/net409
@@ -2715,6 +2705,7 @@ Found 3126 unannotated nets.
  mprj/mprj/net412
  mprj/mprj/net413
  mprj/mprj/net414
+ sigbuf/buf_in\[48\]
  mprj/mprj/net415
  mprj/mprj/net416
  mprj/mprj/net417
@@ -2722,11 +2713,12 @@ Found 3126 unannotated nets.
  mprj/mprj/net419
  mprj/mprj/net420
  mprj/mprj/net421
+ sigbuf/buf_in\[49\]
  mprj/mprj/net422
  mprj/mprj/net423
  mprj/mprj/net424
- mprj/mprj/net425
  mprj/mprj/net426
+ mprj/mprj/net425
  mprj/mprj/net427
  mprj/mprj/net428
  mprj/mprj/net429
@@ -2738,6 +2730,7 @@ Found 3126 unannotated nets.
  mprj/mprj/net435
  mprj/mprj/net436
  mprj/mprj/net437
+ sigbuf/buf_out\[4\]
  mprj/mprj/net438
  mprj/mprj/net439
  mprj/mprj/net440
@@ -2746,6 +2739,7 @@ Found 3126 unannotated nets.
  mprj/mprj/net443
  mprj/mprj/net444
  mprj/mprj/net445
+ sigbuf/buf_out\[50\]
  mprj/mprj/net446
  mprj/mprj/net447
  mprj/mprj/net448
@@ -2753,6 +2747,7 @@ Found 3126 unannotated nets.
  mprj/mprj/net450
  mprj/mprj/net451
  mprj/mprj/net452
+ sigbuf/buf_in\[52\]
  mprj/mprj/net453
  mprj/mprj/net454
  mprj/mprj/net455
@@ -2761,6 +2756,7 @@ Found 3126 unannotated nets.
  mprj/mprj/net458
  mprj/mprj/net459
  mprj/mprj/net460
+ sigbuf/buf_in\[53\]
  mprj/mprj/net461
  mprj/mprj/net462
  mprj/mprj/net463
@@ -2769,6 +2765,7 @@ Found 3126 unannotated nets.
  mprj/mprj/net466
  mprj/mprj/net467
  mprj/mprj/net468
+ sigbuf/buf_in\[54\]
  mprj/mprj/net469
  mprj/mprj/net470
  mprj/mprj/net471
@@ -2777,14 +2774,17 @@ Found 3126 unannotated nets.
  mprj/mprj/net474
  mprj/mprj/net475
  mprj/mprj/net476
+ sigbuf/buf_out\[54\]
  mprj/mprj/net477
  mprj/mprj/net478
  mprj/mprj/net479
  mprj/mprj/net480
  mprj/mprj/net481
- mprj/mprj/net482
- mprj/mprj/net483
- mprj/mprj/net341
+ sigbuf/buf_out\[34\]
+ sigbuf/buf_in\[36\]
+ sigbuf/buf_in\[37\]
+ mprj/mprj/net339
+ padframe/clock
  spare_logic\[0\]/spare_xfq[1]
  spare_logic\[0\]/spare_xfq[0]
  spare_logic\[0\]/spare_xfqn[1]
@@ -5066,8 +5066,8 @@ Found 854 partially unannotated nets.
   mprj/mprj/input240/A
   mprj/mprj/ANTENNA_input240_A/DIODE
  mgmt_buffers/user_clock
-  mprj/mprj/_106650_/A1
-  mprj/mprj/ANTENNA__106650__A1/DIODE
+  mprj/mprj/_16825_/A1
+  mprj/mprj/ANTENNA__16825__A1/DIODE
  mgmt_buffers/user_reset
   mprj/mprj/input181/A
   mprj/mprj/ANTENNA_input181_A/DIODE
